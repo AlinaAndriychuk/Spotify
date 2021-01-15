@@ -1,12 +1,13 @@
-$gray: #aaaaaa
-$dark-gray: #5e5e5e
+$light-gray: #aaaaaa
+$gray: #5e5e5e
 $white: #ffffff
 
 .arrow-button
   padding: 5px
   height: 20px
   width: 20px
-  fill: $gray
+  float: left
+  fill: $light-gray
 
 .arrow-button_left
   transform: rotateZ(90deg)
@@ -15,7 +16,7 @@ $white: #ffffff
   transform: rotateZ(90deg) rotateX(180deg)
 
 .arrow-button_disabled
-  fill: $dark-gray
+  fill: $gray
 
 .arrow-button_active
   cursor: pointer

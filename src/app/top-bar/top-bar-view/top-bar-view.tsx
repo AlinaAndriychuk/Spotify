@@ -2,6 +2,7 @@ import React from 'react';
 import {Search} from '../components/search/search';
 import {ArrowButton} from '../../../ui/arrow-button/arrow-button';
 import {User} from '../components/user/user';
+import './top-bar-view.sass'
 
 export const TopBar = () => {
    return (

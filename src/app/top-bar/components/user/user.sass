@@ -1,10 +1,14 @@
-$light-gray: #aaaaaa
-$white: #ffffff
+@import '../../../../styles/variables'
 
 .user
+  width: 300px
+  padding: 0 10px
+  display: flex
+  justify-content: space-between
+  align-items: center
 
   &__button
-    height: 20px
+    height: 18px
 
   &__button-path
     fill: $light-gray
@@ -13,7 +17,18 @@ $white: #ffffff
     fill: $white
 
   &__info
+    width: 140px
+    display: flex
+    justify-content: space-between
+    align-items: center
 
     &-image
       width: 30px
       border-radius: 50%
+
+  &__menu
+    position: absolute
+
+    
+
+    

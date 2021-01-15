@@ -1,7 +1,25 @@
-$mainTheme: #282828
+@import '../../../styles/variables'
+
+=flex()
+  display: flex
+  justify-content: space-between
+  align-items: center
 
 .top-bar
+  box-sizing: border-box
   background-color: $mainTheme
+  padding: 0 10px
+  height: 60px
+  position: fixed
+  width: 100%
+  +flex()
+
+  &__nav-buttons
+    +flex()
+    width: 65px
+
 
   &__nav
-    display: inline-block
+    box-sizing: border-box
+    width: 270px
+    +flex()

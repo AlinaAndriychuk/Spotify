@@ -1,0 +1,24 @@
+$gray: #aaaaaa
+$dark-gray: #5e5e5e
+$white: #ffffff
+
+.arrow-button
+  padding: 5px
+  height: 20px
+  width: 20px
+  fill: $gray
+
+.arrow-button_left
+  transform: rotateZ(90deg)
+
+.arrow-button_right
+  transform: rotateZ(90deg) rotateX(180deg)
+
+.arrow-button_disabled
+  fill: $dark-gray
+
+.arrow-button_active
+  cursor: pointer
+
+.arrow-button_active:hover
+  fill: $white

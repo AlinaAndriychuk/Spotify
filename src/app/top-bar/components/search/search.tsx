@@ -3,7 +3,7 @@ import './search.sass';
 
 interface SearchProps {
   placeholder?: string;
-}
+};
 
 export const Search: React.FunctionComponent<SearchProps> = ({
   placeholder
@@ -11,4 +11,4 @@ export const Search: React.FunctionComponent<SearchProps> = ({
    return (
     <input className="top-bar__search" placeholder={placeholder}/>
   )
-}
+};

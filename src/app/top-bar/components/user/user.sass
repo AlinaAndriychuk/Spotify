@@ -2,13 +2,14 @@
 
 .user
   width: 300px
-  padding: 0 10px
+  padding-right: 10px
   display: flex
   justify-content: space-between
   align-items: center
 
   &__button
     height: 18px
+    cursor: pointer
 
   &__button-path
     fill: $light-gray
@@ -27,7 +28,42 @@
       border-radius: 50%
 
   &__menu
+    top: 60px
+    right: 10px
+    position: fixed
+    list-style-type: none
+    // Here display = none
+    display: none
+
+    &-item
+      box-sizing: border-box
+      background-color: $mainTheme
+      padding: 10px
+      width: 160px
+      transition: background-color 0.2s
+
+    &-item:hover
+      background-color: $light-gray
+      color: $hoverFontColor
+
+    &-link
+      display: block
+      padding: 3px 20px
+
+      color: inherit
+      text-decoration: none
+
+  &__menu::before
+    display: block
+    top: -20px
+    right: 2px
     position: absolute
+    transform: rotateX(60deg)
+
+    content: "▲"
+    color: $mainTheme
+    font-size: 28px
+    z-index: -5
 
     
 

@@ -11,7 +11,8 @@ export const User: React.FunctionComponent<UserProps> = ({
   src,
   userName,
 }) => {
-   return (
+
+  return (
     <div className="user">
       <svg className="user__button" viewBox="0 0 16 20">
         <g id="Icons" stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
@@ -37,22 +38,22 @@ export const User: React.FunctionComponent<UserProps> = ({
       <ArrowButton type="down" buttonStyle="active"></ArrowButton>
       <menu className="user__menu">
         <li className="user__menu-item">
-          <a href="/index.html">
+          <a className="user__menu-link" href="/index.html">
             Private Session
           </a>
         </li>
         <li className="user__menu-item">
-          <a href="/index.html">
+          <a className="user__menu-link" href="/index.html">
             Account
           </a>
         </li>
         <li className="user__menu-item">
-          <a href="/index.html">
+          <a className="user__menu-link" href="/index.html">
             Setting
           </a>
         </li>
         <li className="user__menu-item">
-          <a href="/index.html">
+          <a className="user__menu-link" href="/index.html">
             Log Out
           </a>
         </li>

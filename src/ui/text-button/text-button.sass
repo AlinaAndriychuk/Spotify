@@ -1,0 +1,40 @@
+@import '../../styles/variables'
+  
+.text-button
+  padding: 7px 15px
+  width: fit-content
+
+  font-size: 11px
+  font-weight: 500
+  letter-spacing: 1px
+  text-transform: uppercase
+
+  display: block
+  border-radius: 20px
+  cursor: pointer
+  
+  &_transparent
+    color: $hoverFontColor
+    background-color: transparent
+    border: $hoverFontColor 1px solid
+  
+    &:hover
+      color: $white
+      border-color: $white
+
+  &_green
+    background-color: $green
+    border: $green 1px solid
+    color: $white
+
+  &_green:hover
+    background-color: $light-green
+
+  &_green-border:hover
+    border-color: $light-green
+
+
+  &:focus
+    outline: none
+
+  

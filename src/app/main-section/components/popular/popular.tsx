@@ -6,7 +6,7 @@ interface PopularProps {
   images: string[];
   names: string[];
   plays: string[];
-  added: string[];
+  added: boolean[];
 }
 
 export const Popular: React.FunctionComponent<PopularProps> = ({
@@ -19,7 +19,11 @@ export const Popular: React.FunctionComponent<PopularProps> = ({
     <ul className="popular">
       {
         images.map( (src, index) => {
-          return <PopularItem image={src} added={added[index]} number={index + 1} key={index} name={names[index]} plays={plays[index]}></PopularItem>
+          return (
+            <li className="popular__item"  key={index}>
+              <PopularItem image={src} added={added[index]} number={index + 1} name={names[index]} plays={plays[index]}></PopularItem>
+            </li>
+          )
         })
       }
     </ul>

@@ -1,0 +1,56 @@
+@import '../../../styles/variables'
+
+.menu-bar
+  position: fixed
+  top: 60px
+  width: 230px
+  min-height: calc(100vh - 60px)
+
+  background-color: $mainTheme
+
+  &__navigation
+    padding: 15px
+
+  &__list
+    margin: 0 0 15px
+    padding: 0
+    list-style-type: none
+
+  &__title
+    height: 15px
+    margin: 0 0 5px
+    cursor: pointer
+
+    text-transform: uppercase
+    font-size: 11px
+    letter-spacing: 1px
+
+  &__title-icon
+    width: 16px
+    margin: -4px 0 -7px 1px
+
+    fill: $light-gray
+
+  &__link
+    box-sizing: border-box
+    display: block
+    padding: 5px 0
+    height: 30px
+
+    color: inherit
+    text-decoration: none
+    line-height: 20px
+
+  &__item-icon
+    width: 14px
+    margin-right: 10px
+    float: left
+    fill: $light-gray
+
+  &__link:hover
+    color: $white
+    border-right: 3px $green solid
+
+  &__link:hover &__item-icon
+    fill: $white
+    

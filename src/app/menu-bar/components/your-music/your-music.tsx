@@ -16,7 +16,7 @@ export const YourMusic: React.FunctionComponent<YourMusicProps> = ({
     <div className="menu-bar__blocK">
       <p className="menu-bar__title">
         {name}
-        <IosArrowDown className="menu_bar__title-icon"></IosArrowDown>
+        <IosArrowDown className="menu-bar__title-icon"></IosArrowDown>
       </p>
       <menu className="menu-bar__list">
         <li className="menu-bar__item">

@@ -43,6 +43,7 @@
     ]
   },
   "devDependencies": {
+    "classnames": "^2.2.6",
     "normalize.css": "^8.0.1",
     "sass-loader": "^10.1.1"
   }

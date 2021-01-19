@@ -1,0 +1,34 @@
+@import '../../../../styles/variables'
+
+.tabs
+  &__list
+    position: relative
+    top: -60px
+    padding: 0
+    margin: 0
+    width: 100%
+    height: 60px
+    display: flex
+    list-style-type: none
+
+  &__item
+    padding: 0 15px
+    height: 58px
+    box-sizing: border-box
+
+    text-transform: uppercase
+    color: $light-gray
+    line-height: 22px
+    letter-spacing: 1px
+    cursor: pointer
+
+  &__item-text
+    padding: 15px 0
+    margin: 0
+
+  &__item_active &__item-text
+    border-bottom: 4px solid $green
+
+  &__item_active
+    color: $white
+    cursor: default

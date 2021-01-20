@@ -1,30 +1,34 @@
 import React from 'react';
-import './album.sass';
-import {TextButton} from '../../../../ui/text-button/text-button';
-import {MoreButton} from '../../../../ui/more-button/more-button'
+import './track.sass';
+import {Song} from '../song/song'
 
-interface AlbumProps {
-  image: string;
-  name: string;
-  year: number;
+interface TrackProps {
+  added: boolean[];
+  names: string[];
+  features: string[];
+  time: string[];
+  popularity: boolean[];
 }
 
-export const Album: React.FunctionComponent<AlbumProps> = ({
-  image,
-  name,
-  year,
+export const Track: React.FunctionComponent<TrackProps> = ({
+  added,
+  names,
+  features,
+  time,
+  popularity,
 }) => {
+  
    return (
-    <div className="album">
-      <img className="album__image" src={image} alt={name}/>
-      <p className="album__year">
-        {year}
-      </p>
-      <p className="album__name">
-        {name}
-      </p>
-      <TextButton text="save" fill="transparent" border="green-border"></TextButton>
-      <MoreButton size="small"></MoreButton>
-    </div>
+    <ul className="track">
+      {
+        names.map( (name, index) => {
+          return (
+            <li className="song" key={index}>
+               <Song number={index + 1} full={true} name={name} feature={features[index]} time={time[index]} added={added[index]} popularity={popularity[index]}></Song>
+            </li>
+          )
+        })
+      } 
+    </ul>
   )
 };

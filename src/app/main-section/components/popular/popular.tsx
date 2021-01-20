@@ -1,6 +1,6 @@
 import React from 'react';
 import './popular.sass';
-import {PopularItem} from '../popular-item/popular-item'
+import {Song} from '../song/song'
 
 interface PopularProps {
   images: string[];
@@ -20,8 +20,8 @@ export const Popular: React.FunctionComponent<PopularProps> = ({
       {
         images.map( (src, index) => {
           return (
-            <li className="popular__item"  key={index}>
-              <PopularItem image={src} added={added[index]} number={index + 1} name={names[index]} plays={plays[index]}></PopularItem>
+            <li className="song"  key={index}>
+              <Song full={false} image={src} added={added[index]} number={index + 1} name={names[index]} plays={plays[index]}></Song>
             </li>
           )
         })

@@ -1,6 +1,6 @@
-import React, {useRef} from 'react';
+import React from 'react';
 import classNames from 'classnames';
-import { TabOption } from '../slider/slider';
+import { TabOption } from '../tabs-view/tabs-view';
 import './tabs.sass';
 
 interface TabItemProps {

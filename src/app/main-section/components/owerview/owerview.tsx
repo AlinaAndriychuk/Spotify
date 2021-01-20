@@ -4,7 +4,11 @@ import {LatestReleaze} from '../latest-release/latest-release';
 import {OwerviewTitle} from '../owerview-title/owerview-title';
 import {Popular} from '../popular/popular';
 import {TextButton} from '../../../../ui/text-button/text-button';
-import {RelatedArtists} from '../related-artists/related-artists'
+import {RelatedArtists} from '../related-artists/related-artists';
+import {Album} from '../album/album'
+import IosList from 'react-ionicons/lib/IosList'
+import IosGrid from 'react-ionicons/lib/IosGrid'
+
 
 const popularImages = ['https://s3-us-west-2.amazonaws.com/s.cdpn.io/7022/whenDarkOut.jpg', 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/7022/tth.jpg', 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/7022/whenDarkOut.jpg', 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/7022/whenDarkOut.jpg', 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/7022/tth.jpg'];
 const added = [true, false, true, false, true];
@@ -27,10 +31,14 @@ export const Owerview = () => {
         <OwerviewTitle name="related artists"></OwerviewTitle>
         <RelatedArtists images={artistImages} names={artists}></RelatedArtists>
       </div>
-      <div className="overview__albums">
+      <div className="owerview__albums">
         <OwerviewTitle name="albums"></OwerviewTitle>
-        
+        <div className="ovewview__buttons">
+          <IosList className="owerview__view owerview__view_active"></IosList>
+          <IosGrid className="owerview__view owerview__view_small"></IosGrid>
+        </div>
       </div>
+      <Album year={2015} name="When It's Dark Out" image="https://s3-us-west-2.amazonaws.com/s.cdpn.io/7022/whenDarkOut.jpg"></Album>
     </div>
   )
 };

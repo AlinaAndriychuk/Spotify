@@ -15,4 +15,27 @@
     display: inline-block
 
   &__albums
+    display: flex
+    justify-content: space-between
+
+    border-bottom: 1px solid $mainTheme
+
+  &__view
+    width: 30px
+    height: 30px
+
+    fill: $white
+    border-radius: 50%
+
+    cursor: pointer
+
+  &__view:hover
+    background-color: $label
+
+  &__view_active
+    background-color: $mainTheme
+    
+  &__view_small
+    width: 20px
+    padding: 0 5px
 

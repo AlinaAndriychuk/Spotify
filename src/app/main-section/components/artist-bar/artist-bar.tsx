@@ -1,7 +1,7 @@
 import React from 'react';
 import './artist-bar.sass';
 import {TextButton} from '../../../../ui/text-button/text-button';
-import {MoreButton} from '../more-button/more-button'
+import {MoreButton} from '../../../../ui/more-button/more-button'
 
 interface ArtistBarProps {
   name: string;
@@ -29,7 +29,7 @@ export const ArtistBar: React.FunctionComponent<ArtistBarProps> = ({
         </h1>
         <TextButton fill="green" border="green-border" text="▶ play"></TextButton>
         <TextButton fill="transparent" border="white-border" text="follow"></TextButton>
-        <MoreButton></MoreButton>
+        <MoreButton size="big"></MoreButton>
       </div>
       <span className="artist-bar__listeners">
         <p className="artist-bar__listeners-number">

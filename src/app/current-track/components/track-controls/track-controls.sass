@@ -27,11 +27,17 @@
     width: 30px
     height: 30px
     fill: $hoverFontColor
+    cursor: pointer
 
   &__skip
     fill: $hoverFontColor
     width: 25px
     height: 25px
+    cursor: pointer
+
+  &__skip:hover,
+  &__play:hover
+    fill: $white
 
   &__progress
     +flex()
@@ -89,6 +95,13 @@
     fill: $light-gray
     height: 18px
     width: 18px
+    cursor: pointer
+
+  &__menu:hover,
+  &__shuffle:hover,
+  &__refresh:hover,
+  &__phone:hover
+    fill: $hoverFontColor
 
   &__menu
     height: 15px
@@ -102,7 +115,18 @@
   &__device
     +flex()
     width: 120px
-    margin-bottom: 10px
+
+  &__lyrics,
+  &__device
+    cursor: pointer
+
+  &__lyrics:hover,
+    text-decoration: underline
+    color: $hoverFontColor
+
+  &__device:hover
+    color: $hoverFontColor
+
 
   &__valume
     +flex()

@@ -46,10 +46,10 @@ export const TrackControls: React.FunctionComponent<TrackControlsProps> = ({
         <IosMenu className="track-controls__menu"></IosMenu>
         <IosShuffle className="track-controls__shuffle"></IosShuffle>
         <MdRefresh className="track-controls__refresh"></MdRefresh>
-        <p className="track-controls__device">
+        <a className="track-controls__device">
           <IosPhonePortrait className="track-controls__phone"></IosPhonePortrait>
           Devices available
-        </p>
+        </a>
         <div className="track-controls__valume">
           <IosVolumeUp className="track-controls__valume-icon"></IosVolumeUp>
           <Nouislider className="track-controls__valume-range" range={{ min: 0, max: 100 }} start={valume} connect={[true, false]}/>

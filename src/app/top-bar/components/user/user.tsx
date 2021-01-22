@@ -1,6 +1,6 @@
 import React from 'react';
 import './user.sass';
-import {ArrowButton} from '../../../../ui/arrow-button/arrow-button'
+import IosArrowDown from 'react-ionicons/lib/IosArrowDown';
 
 interface UserProps {
   src: string;
@@ -35,7 +35,7 @@ export const User: React.FunctionComponent<UserProps> = ({
         <img className="user__info-image" src={src} alt="Profile"/>
         <span className="user__info-name">{userName}</span>
       </div>
-      <ArrowButton type="down" buttonStyle="active"></ArrowButton>
+      <IosArrowDown className="user__menu-button"></IosArrowDown>
       <menu className="user__menu">
         <li className="user__menu-item">
           <a className="user__menu-link" href="/index.html">

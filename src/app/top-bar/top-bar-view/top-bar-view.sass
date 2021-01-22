@@ -18,7 +18,21 @@
 
   &__nav-buttons
     +flex()
-    width: 65px
+    width: 76px
+    padding-right: 10px
+
+  &__nav-arrow
+    padding: 5px
+    height: 28px
+    width: 28px
+    float: left
+    fill: $gray
+
+    &_active
+      fill: $light-gray
+
+      &:hover
+        fill: $white
 
   &__nav
     box-sizing: border-box

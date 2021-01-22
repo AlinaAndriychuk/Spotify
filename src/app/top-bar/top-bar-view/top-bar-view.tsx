@@ -1,6 +1,7 @@
 import React from 'react';
 import {Search} from '../components/search/search';
-import {ArrowButton} from '../../../ui/arrow-button/arrow-button';
+import IosArrowBack from 'react-ionicons/lib/IosArrowBack';
+import IosArrowForward from 'react-ionicons/lib/IosArrowForward';
 import {User} from '../components/user/user';
 import './top-bar-view.sass'
 
@@ -9,8 +10,8 @@ export const TopBar = () => {
     <div className="top-bar">
       <div className="top-bar__nav">
         <div className="top-bar__nav-buttons">
-          <ArrowButton buttonStyle="active" type="left"></ArrowButton>
-          <ArrowButton buttonStyle="disabled" type="right"></ArrowButton>
+          <IosArrowBack className="top-bar__nav-arrow top-bar__nav-arrow_active"></IosArrowBack>
+          <IosArrowForward className="top-bar__nav-arrow"></IosArrowForward>
         </div>
         <Search placeholder="Search"></Search>
       </div>

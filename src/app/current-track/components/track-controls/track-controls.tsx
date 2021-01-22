@@ -39,10 +39,10 @@ export const TrackControls: React.FunctionComponent<TrackControlsProps> = ({
           {time}
         </p>
       </div>
-      <p className="track-controls__lyrics">
-        Lyrics
-      </p>
       <div className="track-controls__tools">
+        <p className="track-controls__lyrics">
+          Lyrics
+        </p>
         <IosMenu className="track-controls__menu"></IosMenu>
         <IosShuffle className="track-controls__shuffle"></IosShuffle>
         <MdRefresh className="track-controls__refresh"></MdRefresh>

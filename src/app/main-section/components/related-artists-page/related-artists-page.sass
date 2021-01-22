@@ -1,7 +1,9 @@
 @import '../../../../styles/variables'
 
 .artists-page
+  box-sizing: border-box
   width: 100%
+  padding: 15px
 
   background-color: $dark-gray
   display: flex
@@ -10,5 +12,5 @@
   &__block
     box-sizing: border-box
     overflow-x: hidden
-    width: 25%
-    padding: 15px
+    width: calc(25% - 30px)
+    margin: 15px

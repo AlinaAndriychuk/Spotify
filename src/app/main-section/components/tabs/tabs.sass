@@ -1,8 +1,10 @@
 @import '../../../../styles/variables'
 
 .tabs
+  width: 100%
   position: absolute
   top: -60px
+  background-color: $transparentGray
 
   &__list
     padding: 0
@@ -33,16 +35,3 @@
   &__item_active
     color: $white
     cursor: default
-
-.slider-view
-  width: 100%
-  overflow-x: hidden
-
-.slider
-  position: relative
-  display: flex
-  width: 200%
-
-  &__page
-    width: 50%
-    flex-shrink: 0

@@ -11,10 +11,14 @@ export const ArtistBlock: React.FunctionComponent<ArtistBlockProps> = ({
   image,
   name,
 }) => {
+  const style = {
+    backgroundImage: 'url(' + image + ')',
+  }
+
   return (
     <React.Fragment>
-      <img className="artists-page__image" src={image} alt={name}/>
-      <a className="artist-page__name" href="./index.html">
+      <div className="artists-page__image" style={style}/>
+      <a className="artists-page__name" href="./index.html">
         {name}
       </a>
     </React.Fragment>

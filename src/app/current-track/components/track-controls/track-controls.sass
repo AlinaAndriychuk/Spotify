@@ -1,0 +1,125 @@
+@import '../../../../styles/variables'
+
+=flex()
+  display: flex
+  justify-content: space-between
+  align-items: center
+  
+.track-controls
+  box-sizing: border-box
+  position: fixed
+  bottom: 0
+  padding: 5px 15px
+  width: 100%
+  height: 62px
+
+  text-transform: uppercase
+  font-size: 11px
+
+  +flex()
+  background-color: $mainTheme
+
+  &__actions
+    +flex()
+    width: 112px
+
+  &__play
+    width: 30px
+    height: 30px
+    fill: $hoverFontColor
+
+  &__skip
+    fill: $hoverFontColor
+    width: 25px
+    height: 25px
+
+  &__progress
+    +flex()
+    width: 40%
+    height: 16px
+
+    &-range
+      width: calc(100% - 70px)
+
+    &:hover .noUi-handle
+      opacity: 1
+
+    .noUi-handle:focus
+      outline: none
+
+    .noUi-connect
+      background-color: $green
+      
+  .noUi-target
+    height: 4px
+    border: none
+    border-radius: 0
+
+  .noUi-handle
+    width: 16px
+    height: 16px
+    right: -15px
+    opacity: 0
+
+    background-color: $hoverFontColor
+    box-shadow: none
+    border: none
+    border-radius: 50%
+
+  .noUi-base
+    background-color: $gray
+
+  .noUi-handle-lower::before,
+  .noUi-handle-lower::after
+    display: none
+
+  .noUi-touch-area
+    width: 18px
+    height: 18px
+
+  &__tools
+    +flex()
+    width: 30%
+
+  &__menu,
+  &__shuffle,
+  &__refresh,
+  &__phone,
+  &__valume-icon
+    fill: $light-gray
+    height: 18px
+    width: 18px
+
+  &__menu
+    height: 15px
+    width: 15px
+
+  &__phone
+    width: 12px
+    height: 12px
+    margin-top: -2px
+
+  &__device
+    +flex()
+    width: 120px
+    margin-bottom: 10px
+
+  &__valume
+    +flex()
+    width: 76px
+    padding-right: 15px
+
+    &-icon
+      width: 24px
+      height: 24px
+
+    &-range
+      width: 50px
+
+    .noUi-connect
+      background-color: $hoverFontColor
+
+    &-range:hover
+      
+      .noUi-handle
+        opacity: 1

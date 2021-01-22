@@ -1,8 +1,8 @@
-import React from 'react';
-import IosArrowDown from 'react-ionicons/lib/IosArrowDown';
+import React, {useRef} from 'react';
 import IosRadioOutline from 'react-ionicons/lib/IosRadioOutline';
 import IosContacts from 'react-ionicons/lib/IosContacts';
 import IosBrowsers from 'react-ionicons/lib/IosBrowsers';
+import {MenuTitle} from '../menu-title/menu-title';
 
 interface MainMenuProps {
   name: string;
@@ -11,13 +11,12 @@ interface MainMenuProps {
 export const MainMenu: React.FunctionComponent<MainMenuProps> = ({
   name,
 }) => {
-   return (
+  const menu = useRef<HTMLMenuElement>(null);
+
+  return (
     <div className="menu-bar__blocK">
-      <p className="menu-bar__title">
-        {name}
-        <IosArrowDown className="menu-bar__title-icon"></IosArrowDown>
-      </p>
-      <menu className="menu-bar__list">
+      <MenuTitle name={name} menu={menu}></MenuTitle>
+      <menu className="menu-bar__list" ref={menu}>
         <li className="menu-bar__item">
           <a className="menu-bar__link" href="./index.html">
             <IosBrowsers className="menu-bar__item-icon"></IosBrowsers>

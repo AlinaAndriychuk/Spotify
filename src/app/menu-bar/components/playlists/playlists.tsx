@@ -1,6 +1,6 @@
-import React from 'react';
-import IosArrowDown from 'react-ionicons/lib/IosArrowDown';
+import React, {useRef} from 'react';
 import IosMusicalNotes from 'react-ionicons/lib/IosMusicalNotes';
+import {MenuTitle} from '../menu-title/menu-title';
 
 interface PlaylistsProps {
   name: string;
@@ -11,13 +11,12 @@ export const Playlists: React.FunctionComponent<PlaylistsProps> = ({
   name,
   itemNames,
 }) => {
+  const menu = useRef<HTMLMenuElement>(null);
+
   return (
     <div className="menu-bar__blocK">
-      <p className="menu-bar__title">
-        {name}
-        <IosArrowDown className="menu-bar__title-icon"></IosArrowDown>
-      </p>
-      <menu className="menu-bar__list">
+      <MenuTitle name={name} menu={menu}></MenuTitle>
+      <menu className="menu-bar__list" ref={menu}>
         {
           itemNames.map( (name, index) => {
             return (

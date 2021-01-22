@@ -1,9 +1,9 @@
-import React from 'react';
-import IosArrowDown from 'react-ionicons/lib/IosArrowDown';
+import React, {useRef} from 'react';
 import MdHeadset from 'react-ionicons/lib/MdHeadset';
 import IosMusicalNotes from 'react-ionicons/lib/IosMusicalNotes';
 import IosPerson from 'react-ionicons/lib/IosPerson';
 import IosDocumentOutline from 'react-ionicons/lib/IosDocumentOutline';
+import {MenuTitle} from '../menu-title/menu-title';
 
 interface YourMusicProps {
   name: string;
@@ -12,13 +12,12 @@ interface YourMusicProps {
 export const YourMusic: React.FunctionComponent<YourMusicProps> = ({
   name,
 }) => {
-   return (
+  const menu = useRef<HTMLMenuElement>(null);
+
+  return (
     <div className="menu-bar__blocK">
-      <p className="menu-bar__title">
-        {name}
-        <IosArrowDown className="menu-bar__title-icon"></IosArrowDown>
-      </p>
-      <menu className="menu-bar__list">
+      <MenuTitle name={name} menu={menu}></MenuTitle>
+      <menu className="menu-bar__list" ref={menu}>
         <li className="menu-bar__item">
           <a className="menu-bar__link" href="./index.html">
             <MdHeadset className="menu-bar__item-icon"></MdHeadset>

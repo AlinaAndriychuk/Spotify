@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useRef} from 'react';
 import './user.sass';
 import IosArrowDown from 'react-ionicons/lib/IosArrowDown';
 import MdNotifications from 'react-ionicons/lib/MdNotifications';
@@ -13,6 +13,11 @@ export const User: React.FunctionComponent<UserProps> = ({
   src,
   userName,
 }) => {
+  const menu = useRef<HTMLMenuElement>(null);
+
+  const showUserMenu = () => {
+    (menu.current as HTMLMenuElement).classList.toggle('user__menu_open');
+  }
 
   return (
     <div className="user">
@@ -22,8 +27,8 @@ export const User: React.FunctionComponent<UserProps> = ({
         <img className="user__info-image" src={src} alt="Profile"/>
         <span className="user__info-name">{userName}</span>
       </div>
-      <IosArrowDown className="user__menu-button"></IosArrowDown>
-      <menu className="user__menu">
+      <IosArrowDown className="user__menu-button" onClick={showUserMenu}></IosArrowDown>
+      <menu className="user__menu" ref={menu}>
         <li className="user__menu-item">
           <a className="user__menu-link" href="/index.html">
             Private Session

@@ -1,5 +1,13 @@
+@import '../../../styles/variables'
+  
 .main
   width: calc(100% - 460px)
-  position: relative
+  height: calc(100vh - 122px)
+  position: fixed
   left: 230px
   top: 60px
+  background-color: $dark-gray
+
+  &__content
+    overflow-y: scroll
+    height: 100%

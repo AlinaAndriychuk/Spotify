@@ -5,12 +5,14 @@
   box-sizing: border-box
 
   display: flex
-  flex-wrap: row wrap
   align-items: center
   height: 42px
 
   &:last-child
   border-bottom: 1px solid $mainTheme
+
+  &:hover
+    background-color: $mainTheme
   
   &__icon
     height: 41px
@@ -60,6 +62,11 @@
 
   &__feature
     margin-left: 5px
+    cursor: pointer
+
+    &:hover
+      text-decoration: underline
+      color: $hoverFontColor
 
   &__container
     min-width: 300px
@@ -67,5 +74,18 @@
 
 @media screen and ( max-width: 1200px )
   .song
+
+    &__container
+      min-width: fit-content
+
     &__label
       display: none
+
+    &__popularity
+      display: none
+
+    &__name
+      margin-left: 25px
+
+    &__time
+      margin: 0 0 0 auto

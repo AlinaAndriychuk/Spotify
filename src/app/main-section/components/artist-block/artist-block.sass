@@ -4,8 +4,27 @@
 
   &__image
     height: 200px
+    position: relative
+
     background-size: cover
     background-position: center
+
+    &:hover .artists-page__play
+      opacity: 1
+
+  &__play
+    position: absolute
+    top: 50px
+    width: 60px
+    height: 100px
+    left: 50%
+    transform: translateX(-50%)
+
+    transition: opacity 0.5s
+    opacity: 0
+    display: block
+    fill: $white
+    cursor: pointer
 
   &__name
     padding: 15px

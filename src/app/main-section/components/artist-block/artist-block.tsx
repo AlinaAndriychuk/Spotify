@@ -1,6 +1,6 @@
 import React from 'react';
 import './artist-block.sass';
-
+import MdPlay from 'react-ionicons/lib/MdPlay'
 
 interface ArtistBlockProps {
   image: string;
@@ -17,7 +17,9 @@ export const ArtistBlock: React.FunctionComponent<ArtistBlockProps> = ({
 
   return (
     <React.Fragment>
-      <div className="artists-page__image" style={style}/>
+      <div className="artists-page__image" style={style}>
+        <MdPlay className="artists-page__play"></MdPlay>
+      </div>
       <a className="artists-page__name" href="./index.html">
         {name}
       </a>

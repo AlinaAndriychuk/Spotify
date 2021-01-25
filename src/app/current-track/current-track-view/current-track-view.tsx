@@ -1,5 +1,4 @@
 import React from 'react';
-import './current-track-view.sass';
 import {TrackControls} from '../components/track-controls/track-controls'
 
 const trackTime = '3:07';

@@ -3,10 +3,11 @@
 .main
   width: 70%
   height: calc(100vh - 122px)
-  position: fixed
+  position: relative
   left: 15%
   top: 60px
   background-color: $dark-gray
+  z-index: 0
 
   &__content
     overflow-y: scroll
@@ -19,7 +20,6 @@
 
 @media screen and ( max-width: 770px )
   .main
-    position: relative
     width: 100%
     left: auto
     top: auto

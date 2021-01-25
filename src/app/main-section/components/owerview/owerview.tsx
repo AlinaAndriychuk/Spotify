@@ -27,16 +27,18 @@ const popularity = [true, true, true, false, true, true, true, true, false, true
 export const Owerview = () => {
    return (
     <div className="owerview">
-      <div className="owerview__artist">
-        <OwerviewTitle name="latest release"></OwerviewTitle>
-        <LatestReleaze title="Drifting (Track Commentary)" date="4 December 2015" imageSrc="https://s3-us-west-2.amazonaws.com/s.cdpn.io/7022/whenDarkOut.jpg"></LatestReleaze>
-        <OwerviewTitle name="popular"></OwerviewTitle>
-        <Popular images={popularImages} plays={plays} names={popularSongs} added={popularAdded}></Popular>
-        <TextButton fill="transparent" border="white-border" text="show 5 more"></TextButton>
-      </div>
-      <div className="owerview__block">
-        <OwerviewTitle name="related artists"></OwerviewTitle>
-        <RelatedArtists images={artistImages} names={artists}></RelatedArtists>
+      <div className="owerview__header">
+        <div className="owerview__artist">
+          <OwerviewTitle name="latest release"></OwerviewTitle>
+          <LatestReleaze title="Drifting (Track Commentary)" date="4 December 2015" imageSrc="https://s3-us-west-2.amazonaws.com/s.cdpn.io/7022/whenDarkOut.jpg"></LatestReleaze>
+          <OwerviewTitle name="popular"></OwerviewTitle>
+          <Popular images={popularImages} plays={plays} names={popularSongs} added={popularAdded}></Popular>
+          <TextButton fill="transparent" border="white-border" text="show 5 more"></TextButton>
+        </div>
+        <div className="owerview__block">
+          <OwerviewTitle name="related artists"></OwerviewTitle>
+          <RelatedArtists images={artistImages} names={artists}></RelatedArtists>
+        </div>
       </div>
       <div className="owerview__albums">
         <OwerviewTitle name="albums"></OwerviewTitle>

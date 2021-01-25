@@ -2,9 +2,22 @@
 
 .related
   &__image
-      width: 42px
-      border-radius: 50%
+    width: 42px
+    margin-right: 15px
+
+    border-radius: 50%
+    float: left
 
   &__name
-    margin-left: 15px
     color: $white
+
+@media screen and ( max-width: 480px )
+  .related
+
+    &__image
+      float: none
+      display: block
+      margin: 0 auto
+    
+    &__name
+      display: none

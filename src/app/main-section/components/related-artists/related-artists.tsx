@@ -12,7 +12,7 @@ export const RelatedArtists: React.FunctionComponent<RelatedArtistsProps> = ({
   names,
 }) => {
    return (
-    <ul className="popular">
+    <ul className="related">
       {
         images.map( (src, index) => {
           return (

@@ -1,7 +1,6 @@
 import React from 'react';
 import './song.sass';
-import MdCheckmark from 'react-ionicons/lib/MdCheckmark';
-import IosAdd from 'react-ionicons/lib/IosAdd';
+import {AddedIcon} from '../../../../ui/added-icon/added-icon'
 import MdTrendingUp from 'react-ionicons/lib/MdTrendingUp';
 import MdTrendingDown from 'react-ionicons/lib/MdTrendingDown';
 
@@ -28,14 +27,6 @@ export const Song: React.FunctionComponent<SongProps> = ({
   time,
   popularity,
 }) => {
-  const choseAddedIcon = () => {
-    if (added) {
-      return <MdCheckmark className={"song__checkmark song__checkmark_added"}/>
-    } else {
-      return <IosAdd className={"song__checkmark song__checkmark_not-added"}></IosAdd>
-    }
-  };
-
   const chosePopularityIcon = () => {
     if (popularity) {
       return <MdTrendingUp className={"song__popularity"}/>
@@ -51,9 +42,7 @@ export const Song: React.FunctionComponent<SongProps> = ({
         <p className="song__number">
           {number}
         </p>
-        {
-          choseAddedIcon()
-        }
+        <AddedIcon position="left" added={added}></AddedIcon>
         <p className="song__name song__name_popular">
           {name}
         </p>
@@ -73,9 +62,7 @@ export const Song: React.FunctionComponent<SongProps> = ({
         <p className="song__number">
           {number}
         </p>
-        {
-         choseAddedIcon()
-        }
+        <AddedIcon position="left" added={added}></AddedIcon>
         <div className="song__container">
           <p className="song__name">
             {name}

@@ -14,7 +14,7 @@ export const MainMenu: React.FunctionComponent<MainMenuProps> = ({
   const menu = useRef<HTMLMenuElement>(null);
 
   return (
-    <div className="menu-bar__blocK">
+    <div className="menu-bar__block">
       <MenuTitle name={name} menu={menu}></MenuTitle>
       <menu className="menu-bar__list" ref={menu}>
         <li className="menu-bar__item">

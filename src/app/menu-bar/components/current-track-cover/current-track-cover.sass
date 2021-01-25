@@ -2,13 +2,14 @@
   
 .menu-bar
   &__cover
-    position: absolute
-    bottom: 62px
+    position: relative
+    bottom: 2px
     width: 100%
-    height: 50px
+    padding-right: 10px
 
     display: flex
     align-items: center
+    box-sizing: border-box
     background-color: $mainTheme
     border-top: 1px solid $dark-gray
     border-bottom: 1px solid $dark-gray
@@ -21,7 +22,6 @@
     &-name
       display: block
       margin: 4px 0
-      width: 120px
 
       color: inherit
       text-decoration: none
@@ -30,9 +30,10 @@
         color: $white
         text-decoration: underline
 
-    &-checkmark
-      fill: $light-gray
-      width: 18px
-
     &-image
       width: 50px
+
+@media screen and ( max-width: 770px )
+  .menu-bar
+    &__cover
+      bottom: 0

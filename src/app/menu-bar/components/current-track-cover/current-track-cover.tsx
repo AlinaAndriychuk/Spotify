@@ -1,7 +1,6 @@
 import React from 'react';
 import './current-track-cover.sass';
-import MdCheckmark from 'react-ionicons/lib/MdCheckmark';
-import IosAdd from 'react-ionicons/lib/IosAdd';
+import {AddedIcon} from '../../../../ui/added-icon/added-icon'
 
 interface CurrentTrackCoverProps {
   added: boolean;
@@ -16,13 +15,6 @@ export const CurrentTrackCover: React.FunctionComponent<CurrentTrackCoverProps> 
   artist,
   song
 }) => {
-  const choseAddedIcon = () => {
-    if (added) {
-      return <MdCheckmark className={"menu-bar__cover-checkmark"}/>
-    } else {
-      return <IosAdd className={"menu-bar__cover-checkmark"}></IosAdd>
-    }
-  };
 
   return (
     <div className="menu-bar__cover">
@@ -35,9 +27,7 @@ export const CurrentTrackCover: React.FunctionComponent<CurrentTrackCoverProps> 
           {artist}
         </a>
       </div>
-      {
-        choseAddedIcon()
-      }
+      <AddedIcon position="right" added={added}></AddedIcon>
     </div>
   )
 };

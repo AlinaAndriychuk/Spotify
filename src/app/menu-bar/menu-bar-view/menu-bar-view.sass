@@ -3,13 +3,14 @@
 .menu-bar
   position: fixed
   top: 60px
-  width: 230px
-  height: calc(100vh - 60px)
+  width: 15%
+  height: calc(100vh - 120px)
 
+  display: flex
+  flex-direction: column
   background-color: $mainTheme
 
   &__navigation
-    height: calc(100vh - 267px)
     overflow-y: scroll
     padding: 15px
 
@@ -26,11 +27,12 @@
     box-sizing: border-box
     display: block
     padding: 5px 0
-    height: 30px
 
     color: inherit
     text-decoration: none
     line-height: 20px
+
+    border-right: 3px transparent solid
 
   &__item-icon
     width: 14px
@@ -45,3 +47,32 @@
   &__link:hover &__item-icon
     fill: $white
     
+@media screen and ( max-width: 1400px )
+  .menu-bar
+    width: 20%
+
+@media screen and ( max-width: 770px )
+  .menu-bar
+    width: 100%
+    height: auto
+
+    &__navigation
+      display: flex
+      
+    &__block
+      width: 33%
+      height: min-content
+      flex-grow: 1
+
+    &__list
+      margin: 0
+
+    &__link
+      text-align: center
+      border: none
+
+    &__link:hover
+      border: none
+
+    &__item-icon
+      display: none

@@ -36,5 +36,26 @@
 
   &__nav
     box-sizing: border-box
-    width: 270px
+    width: 285px
     +flex()
+
+@media screen and ( max-width: 770px )
+  .top-bar
+    position: relative
+
+@media screen and ( max-width: 650px )
+  .top-bar
+    height: 100px
+    display: block
+
+    &__nav
+      width: 100%
+      height: 50px
+      justify-content: flex-start
+
+    &__nav-arrow
+      padding: 0
+
+    &__nav-buttons
+      width: 64px
+      margin-right: calc(18% - 64px)

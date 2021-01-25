@@ -11,10 +11,10 @@ import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
+    <TopBar/>
+    <MenuBar/>
     <FriendsBar/>
     <MainSection/>
-    <MenuBar/>
-    <TopBar/>
     <CurrentTrack/>
   </React.StrictMode>,
   document.getElementById('root')

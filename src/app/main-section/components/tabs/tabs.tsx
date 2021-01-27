@@ -16,11 +16,11 @@ const TabItem: React.FunctionComponent<TabItemProps> = ({
   renderTab,
   onChange,
 }) => {
-  const itemClass = classNames({"tabs__item": true, "tabs__item_active": active});
+  const itemClass = classNames({"tab-item": true, "tab-item_active": active});
 
   return (
     <li className={itemClass} onClick={ () => onChange(options) }>
-      <p className="tabs__item-text">
+      <p className="tab-item__text">
         {renderTab(options.label)}
       </p>
     </li>

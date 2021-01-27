@@ -1,7 +1,7 @@
 import React from 'react';
 import './album.sass';
-import {TextButton} from '../../../../ui/text-button/text-button';
-import {MoreButton} from '../../../../ui/more-button/more-button'
+import { TextButton } from '../../../../ui/text-button/text-button';
+import { MoreButton } from '../../../../ui/more-button/more-button'
 
 interface AlbumProps {
   image: string;
@@ -14,9 +14,9 @@ export const Album: React.FunctionComponent<AlbumProps> = ({
   name,
   year,
 }) => {
-   return (
+  return (
     <div className="album">
-      <img className="album__image" src={image} alt={name}/>
+      <img className="album__image" src={image} alt={name} />
       <p className="album__year">
         {year}
       </p>

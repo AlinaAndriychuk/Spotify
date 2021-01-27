@@ -11,11 +11,11 @@ export const RelatedItem: React.FunctionComponent<RelatedItemProps> = ({
   name,
 }) => {
    return (
-    <React.Fragment>
-      <img className="related__image" src={image} alt={name}/>
-      <p className="related__name">
+    <div className="related-block">
+      <img className="related-block__image" src={image} alt={name}/>
+      <p className="related-block__name">
         {name}
       </p>
-    </React.Fragment>
+    </div>
   )
 };

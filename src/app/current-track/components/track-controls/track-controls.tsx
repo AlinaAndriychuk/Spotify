@@ -34,7 +34,7 @@ export const TrackControls: React.FunctionComponent<TrackControlsProps> = ({
         <p className="track-controls__time">
           0:01
         </p>
-        <Nouislider className="track-controls__progress-range" range={{ min: 0, max: 100 }} start={progressValue} connect={[true, false]}/>
+        <Nouislider className="track-controls__progress-range" range={{ min: 0, max: 100 }} start={progressValue} connect={[true, false]} />
         <p className="track-controls__time">
           {time}
         </p>
@@ -52,7 +52,7 @@ export const TrackControls: React.FunctionComponent<TrackControlsProps> = ({
         </p>
         <div className="track-controls__valume">
           <IosVolumeUp className="track-controls__valume-icon"></IosVolumeUp>
-          <Nouislider className="track-controls__valume-range" range={{ min: 0, max: 100 }} start={valume} connect={[true, false]}/>
+          <Nouislider className="track-controls__valume-range" range={{ min: 0, max: 100 }} start={valume} connect={[true, false]} />
         </div>
       </div>
     </div>

@@ -1,5 +1,5 @@
 import React from 'react';
-import {TrackControls} from '../components/track-controls/track-controls'
+import { TrackControls } from '../components/track-controls/track-controls'
 
 const trackTime = '3:07';
 const progressValue = 20;

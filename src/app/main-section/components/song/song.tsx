@@ -29,15 +29,15 @@ export const Song: React.FunctionComponent<SongProps> = ({
 }) => {
   const chosePopularityIcon = () => {
     if (popularity) {
-      return <MdTrendingUp className={"song__popularity"}/>
+      return <MdTrendingUp className="song__popularity"/>
     } else {
-      return <MdTrendingDown className={"song__popularity"}></MdTrendingDown>
+      return <MdTrendingDown className="song__popularity"></MdTrendingDown>
     }
   }
 
   const popularSong = () => {
     return (
-      <React.Fragment>
+      <div className="song">
         <img className="song__icon" src={image} alt={name}/>
         <p className="song__number">
           {number}
@@ -52,13 +52,13 @@ export const Song: React.FunctionComponent<SongProps> = ({
         <p className="song__plays">
           {plays}
         </p>
-      </React.Fragment>
+      </div>
     )
   };
   
   const trackSong = () => {
     return (
-      <React.Fragment>
+      <div className="song">
         <p className="song__number">
           {number}
         </p>
@@ -80,7 +80,7 @@ export const Song: React.FunctionComponent<SongProps> = ({
         {
           chosePopularityIcon()
         }
-      </React.Fragment>
+      </div>
     )
   }
 

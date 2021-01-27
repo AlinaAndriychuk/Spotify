@@ -1,6 +1,6 @@
 import React from 'react';
 import './related-artists-page.sass';
-import {ArtistBlock} from '../artist-block/artist-block'
+import { ArtistBlock } from '../artist-block/artist-block'
 
 
 interface ArtistsPageProps {
@@ -15,9 +15,9 @@ export const ArtistsPage: React.FunctionComponent<ArtistsPageProps> = ({
   return (
     <div className="artists-page">
       {
-        names.map( (name, index) => {
+        names.map((name, index) => {
           return (
-            <div className="artists-page__block" key={index}>
+            <div className="artists-page__item" key={index}>
               <ArtistBlock name={name} image={images[index]}></ArtistBlock>
             </div>
           )

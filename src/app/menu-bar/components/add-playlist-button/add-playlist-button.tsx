@@ -4,9 +4,9 @@ import IosAddCircleOutline from 'react-ionicons/lib/IosAddCircleOutline'
 
 export const AddPlaylistButton = () => {
    return (
-    <div className="menu-bar__add-button">
-      <a className="menu-bar__add-link" href="./index.html">
-        <IosAddCircleOutline className="menu-bar__add-icon"></IosAddCircleOutline>
+    <div className="add-button">
+      <a className="add-button__link" href="./index.html">
+        <IosAddCircleOutline className="add-button__icon"></IosAddCircleOutline>
         New Playlist
       </a>
     </div>

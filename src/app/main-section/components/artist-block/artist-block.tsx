@@ -16,13 +16,13 @@ export const ArtistBlock: React.FunctionComponent<ArtistBlockProps> = ({
   }
 
   return (
-    <React.Fragment>
-      <div className="artists-page__image" style={style}>
-        <MdPlay className="artists-page__play"></MdPlay>
+    <div className="artist-block">
+      <div className="artist-block__image" style={style}>
+        <MdPlay className="artist-block__play"></MdPlay>
       </div>
-      <a className="artists-page__name" href="./index.html">
+      <a className="artist-block__name" href="./index.html">
         {name}
       </a>
-    </React.Fragment>
+    </div>
   )
 };

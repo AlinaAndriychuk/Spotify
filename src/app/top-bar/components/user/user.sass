@@ -34,46 +34,7 @@
     &:hover
       fill: $white
 
-  &__menu
-    top: 60px
-    right: 10px
-    position: absolute
-    padding: 0
-    list-style-type: none
-    display: none
-
-    &-item
-      box-sizing: border-box
-      background-color: $mainTheme
-      padding: 10px
-      width: 160px
-      transition: background-color 0.2s
-
-    &-item:hover
-      background-color: $light-gray
-      color: $hoverFontColor
-
-    &-link
-      display: block
-      padding: 3px 20px
-
-      color: inherit
-      text-decoration: none
-
-  &__menu_open
-    display: block
-
-  &__menu::before
-    display: block
-    top: -20px
-    right: 2px
-    position: absolute
-    transform: rotateX(60deg)
-
-    content: "▲"
-    color: $mainTheme
-    font-size: 28px
-    z-index: -5
+  
 
 @media screen and ( max-width: 770px )
   .user

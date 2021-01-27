@@ -1,6 +1,7 @@
-import React, {useRef} from 'react';
+import React, { useRef, useState } from 'react';
 import IosMusicalNotes from 'react-ionicons/lib/IosMusicalNotes';
-import {MenuTitle} from '../menu-title/menu-title';
+import { MenuTitle } from '../menu-title/menu-title';
+import classNames from 'classnames';
 
 interface PlaylistsProps {
   name: string;
@@ -12,17 +13,33 @@ export const Playlists: React.FunctionComponent<PlaylistsProps> = ({
   itemNames,
 }) => {
   const menu = useRef<HTMLMenuElement>(null);
+  const [menuState, setMenuState] = useState({
+    menu: false,
+    title: false,
+  });
+
+  const navListClass = classNames({
+    "nav__list": true,
+    "nav__list_open": menuState.title,
+  });
+
+  const changeMenuState = (value) => {
+    setMenuState({
+      menu: !menuState.menu,
+      title: !menuState.title,
+    })
+  }
 
   return (
-    <div className="menu-bar__block">
-      <MenuTitle name={name} menu={menu}></MenuTitle>
-      <menu className="menu-bar__list" ref={menu}>
+    <div className="nav">
+      <MenuTitle name={name} menu={menu} onChange={changeMenuState} options={menuState}></MenuTitle>
+      <menu className={navListClass} ref={menu}>
         {
           itemNames.map( (name, index) => {
             return (
-              <li className="menu-bar__item" key={index}>
-                <a className="menu-bar__link" href="./index.html">
-                  <IosMusicalNotes className="menu-bar__item-icon"></IosMusicalNotes>
+              <li className="nav__item" key={index}>
+                <a className="nav__link" href="./index.html">
+                  <IosMusicalNotes className="nav__item-icon"></IosMusicalNotes>
                   {name}
                 </a>
               </li>

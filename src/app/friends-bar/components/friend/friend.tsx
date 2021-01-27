@@ -11,10 +11,10 @@ export const Friend: React.FunctionComponent<FriendProps> = ({
   name,
   link,
 }) => {
-   return (
-    <li className="friends-bar__item">
-      <a className="friends-bar__link" href={link || "./index.html"}>
-        <MdPerson className="friends-bar__icon"></MdPerson>
+  return (
+    <li className="friend">
+      <a className="friend__link" href={link || "./index.html"}>
+        <MdPerson className="friend__icon"></MdPerson>
         {name}
       </a>
     </li>

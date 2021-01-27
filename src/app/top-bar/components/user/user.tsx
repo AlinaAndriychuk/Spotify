@@ -1,8 +1,9 @@
-import React, {useRef} from 'react';
+import React, { useRef, useState } from 'react';
 import './user.sass';
 import IosArrowDown from 'react-ionicons/lib/IosArrowDown';
 import MdNotifications from 'react-ionicons/lib/MdNotifications';
 import MdArchive from 'react-ionicons/lib/MdArchive';
+import { UserMenu } from '../user-menu/user-menu';
 
 interface UserProps {
   src: string;
@@ -14,9 +15,10 @@ export const User: React.FunctionComponent<UserProps> = ({
   userName,
 }) => {
   const menu = useRef<HTMLMenuElement>(null);
+  const [menuState, setMenuState] = useState(false)
 
-  const showUserMenu = () => {
-    (menu.current as HTMLMenuElement).classList.toggle('user__menu_open');
+  const changeMenuState = () => {
+    setMenuState(!menuState)
   }
 
   return (
@@ -24,32 +26,11 @@ export const User: React.FunctionComponent<UserProps> = ({
       <MdNotifications className="user__button"></MdNotifications>
       <MdArchive className="user__button"></MdArchive>
       <div className="user__info">
-        <img className="user__info-image" src={src} alt="Profile"/>
+        <img className="user__info-image" src={src} alt="Profile" />
         <span className="user__info-name">{userName}</span>
       </div>
-      <IosArrowDown className="user__menu-button" onClick={showUserMenu}></IosArrowDown>
-      <menu className="user__menu" ref={menu}>
-        <li className="user__menu-item">
-          <a className="user__menu-link" href="/index.html">
-            Private Session
-          </a>
-        </li>
-        <li className="user__menu-item">
-          <a className="user__menu-link" href="/index.html">
-            Account
-          </a>
-        </li>
-        <li className="user__menu-item">
-          <a className="user__menu-link" href="/index.html">
-            Setting
-          </a>
-        </li>
-        <li className="user__menu-item">
-          <a className="user__menu-link" href="/index.html">
-            Log Out
-          </a>
-        </li>
-      </menu>
+      <IosArrowDown className="user__menu-button" onClick={changeMenuState}></IosArrowDown>
+      <UserMenu open={menuState} menu={menu}></UserMenu>
     </div>
   )
 };

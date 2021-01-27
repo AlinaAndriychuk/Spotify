@@ -1,39 +1,37 @@
 @import '../../../../styles/variables'
   
-.menu-bar
-  &__cover
-    position: relative
-    bottom: 2px
-    width: 100%
-    padding-right: 10px
+.track-cover
+  position: relative
+  bottom: 2px
+  width: 100%
+  padding-right: 10px
 
-    display: flex
-    align-items: center
+  display: flex
+  align-items: center
+  box-sizing: border-box
+  background-color: $mainTheme
+  border-top: 1px solid $dark-gray
+  border-bottom: 1px solid $dark-gray
+
+  &__text
+    padding: 3px 15px
+    height: 100%
     box-sizing: border-box
-    background-color: $mainTheme
-    border-top: 1px solid $dark-gray
-    border-bottom: 1px solid $dark-gray
 
-    &-text
-      padding: 3px 15px
-      height: 100%
-      box-sizing: border-box
+  &__name
+    display: block
+    margin: 4px 0
 
-    &-name
-      display: block
-      margin: 4px 0
+    color: inherit
+    text-decoration: none
 
-      color: inherit
-      text-decoration: none
+    &:hover
+      color: $white
+      text-decoration: underline
 
-      &:hover
-        color: $white
-        text-decoration: underline
-
-    &-image
-      width: 50px
+  &__image
+    width: 50px
 
 @media screen and ( max-width: 770px )
-  .menu-bar
-    &__cover
-      bottom: 0
+  .track-cover
+    bottom: 0

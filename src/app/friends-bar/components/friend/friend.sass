@@ -1,24 +1,26 @@
 @import '../../../../styles/variables'
 
-.friends-bar__link
-  box-sizing: border-box
-  display: inline-block
-  padding: 17px 10px
-  width: 100%
+.friend
 
-  color: inherit
-  text-decoration: none
-  line-height: 26px
+  &__link
+    box-sizing: border-box
+    display: inline-block
+    padding: 17px 10px
+    width: 100%
 
-.friends-bar__icon
-  width: 23px
-  padding-right: 10px
-  float: left
-  fill: $light-gray
+    color: inherit
+    text-decoration: none
+    line-height: 26px
 
-.friends-bar__link:hover
-  color: $hoverFontColor
-  text-decoration: underline
+    &:hover
+      color: $hoverFontColor
+      text-decoration: underline
 
-.friends-bar__link:hover .friends-bar__icon
-  fill: $hoverFontColor
+    &:hover .friends-bar__icon
+      fill: $hoverFontColor
+
+  &__icon
+    width: 23px
+    padding-right: 10px
+    float: left
+    fill: $light-gray

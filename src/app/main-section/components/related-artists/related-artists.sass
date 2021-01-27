@@ -8,17 +8,8 @@
   margin: 0
 
   &__item
-    box-sizing: border-box
-    padding: 5px
-    margin-bottom: 2px
-    height: 52px
     display: inline-block
     width: 100%
-    background-color: $mainTheme
-    cursor: pointer
-
-  &__item:hover
-    background-color: $label
 
 @media screen and ( max-width: 1025px )
   .related
@@ -37,8 +28,3 @@
     &__item
       margin: 5px
       width: calc(100% / 4 - 10px)
-      background-color: transparent
-
-      &:hover
-        background-color: transparent
-        opacity: 0.6

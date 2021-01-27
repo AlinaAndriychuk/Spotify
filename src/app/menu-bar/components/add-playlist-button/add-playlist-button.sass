@@ -1,21 +1,20 @@
 @import '../../../../styles/variables'
 
-.menu-bar
-  &__add-button
-    width: 100%
-    height: 65px
-    box-sizing: border-box
-    padding: 15px
+.add-button
+  width: 100%
+  height: 65px
+  box-sizing: border-box
+  padding: 15px
 
-    background-color: $mainTheme
-    border-top: 1px solid $dark-gray
-    border-bottom: 1px solid $dark-gray
+  background-color: $mainTheme
+  border-top: 1px solid $dark-gray
+  border-bottom: 1px solid $dark-gray
 
-    &:hover
-      color: $white
-      background-color: $label
+  &:hover
+    color: $white
+    background-color: $label
 
-  &__add-link
+  &__link
     display: flex
     align-items: center
     height: 100%
@@ -23,14 +22,13 @@
     text-decoration: none
     color: inherit
 
-  &__add-icon
+  &__icon
     fill: $white
     width: 24px
     height: 24px
     padding-right: 13px
 
 @media screen and ( max-width: 770px )
-  .menu-bar
-    &__add-button
+  .add-button
       display: none
 

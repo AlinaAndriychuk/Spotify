@@ -9,7 +9,7 @@ export const OwerviewTitle: React.FunctionComponent<OwerviewTitleProps> = ({
   name
 }) => {
    return (
-    <p className="owerview__title">
+    <p className="owerview-title">
       {name}
     </p>
   )

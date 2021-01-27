@@ -1,0 +1,42 @@
+@import '../../../../styles/variables'
+  
+.user-menu
+  top: 60px
+  right: 10px
+  position: absolute
+  padding: 0
+  list-style-type: none
+  display: none
+
+  &__item
+    box-sizing: border-box
+    background-color: $mainTheme
+    padding: 10px
+    width: 160px
+    transition: background-color 0.2s
+
+    &:hover
+      background-color: $light-gray
+      color: $hoverFontColor
+
+  &__link
+    display: block
+    padding: 3px 20px
+
+    color: inherit
+    text-decoration: none
+
+  &_open
+    display: block
+
+  &::before
+    display: block
+    top: -20px
+    right: 2px
+    position: absolute
+    transform: rotateX(60deg)
+
+    content: "▲"
+    color: $mainTheme
+    font-size: 28px
+    z-index: -5

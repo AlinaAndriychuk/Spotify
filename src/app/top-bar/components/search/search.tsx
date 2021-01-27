@@ -9,6 +9,6 @@ export const Search: React.FunctionComponent<SearchProps> = ({
   placeholder
 }) => {
    return (
-    <input className="top-bar__search" placeholder={placeholder}/>
+    <input className="search" placeholder={placeholder}/>
   )
 };

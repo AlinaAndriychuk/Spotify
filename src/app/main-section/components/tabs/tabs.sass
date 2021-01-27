@@ -14,24 +14,29 @@
     display: flex
     list-style-type: none
 
-  &__item
-    padding: 0 15px
-    height: 58px
-    box-sizing: border-box
+.tab-item
+  padding: 0 15px
+  height: 58px
+  box-sizing: border-box
 
-    text-transform: uppercase
-    color: $light-gray
-    line-height: 22px
-    letter-spacing: 1px
-    cursor: pointer
+  text-transform: uppercase
+  color: $light-gray
+  line-height: 22px
+  letter-spacing: 1px
+  cursor: pointer
 
-  &__item-text
+  transition: color 0.4s
+
+  &:hover
+    color: $white
+
+  &__text
     padding: 15px 0
     margin: 0
 
-  &__item_active &__item-text
+  &_active &__text
     border-bottom: 4px solid $green
 
-  &__item_active
+  &_active
     color: $white
     cursor: default

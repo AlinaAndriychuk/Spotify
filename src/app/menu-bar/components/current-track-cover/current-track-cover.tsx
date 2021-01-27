@@ -17,13 +17,13 @@ export const CurrentTrackCover: React.FunctionComponent<CurrentTrackCoverProps> 
 }) => {
 
   return (
-    <div className="menu-bar__cover">
-      <img className="menu-bar__cover-image" src={image}  alt={artist}/>
-      <div className="menu-bar__cover-text">
-        <a className="menu-bar__cover-name" href="./index.html">
+    <div className="track-cover">
+      <img className="track-cover__image" src={image}  alt={artist}/>
+      <div className="track-cover__text">
+        <a className="track-cover__name" href="./index.html">
           {song}
         </a>
-        <a className="menu-bar__cover-name" href="./index.html">
+        <a className="track-cover__name" href="./index.html">
           {artist}
         </a>
       </div>

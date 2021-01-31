@@ -11,9 +11,9 @@ export const RelatedItem: React.FunctionComponent<RelatedItemProps> = ({
   name,
 }) => {
    return (
-    <div className="related-block">
-      <img className="related-block__image" src={image} alt={name}/>
-      <p className="related-block__name">
+    <div className="artist-preview">
+      <img className="artist-preview__image" src={image} alt={name}/>
+      <p className="artist-preview__name">
         {name}
       </p>
     </div>

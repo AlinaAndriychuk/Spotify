@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react';
+import React, { useState } from 'react';
 import './user.sass';
 import IosArrowDown from 'react-ionicons/lib/IosArrowDown';
 import MdNotifications from 'react-ionicons/lib/MdNotifications';
@@ -14,11 +14,10 @@ export const User: React.FunctionComponent<UserProps> = ({
   src,
   userName,
 }) => {
-  const menu = useRef<HTMLMenuElement>(null);
-  const [menuState, setMenuState] = useState(false)
+  const [opened, setOpened] = useState(false)
 
   const changeMenuState = () => {
-    setMenuState(!menuState)
+    setOpened(!opened)
   }
 
   return (
@@ -30,7 +29,7 @@ export const User: React.FunctionComponent<UserProps> = ({
         <span className="user__info-name">{userName}</span>
       </div>
       <IosArrowDown className="user__menu-button" onClick={changeMenuState}/>
-      <UserMenu open={menuState} menu={menu}/>
+      {opened && <UserMenu/>}
     </div>
   )
 };

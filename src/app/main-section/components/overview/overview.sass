@@ -1,19 +1,19 @@
 @import '../../../../styles/variables'
 
-.owerview
+.overview
   padding: 15px
   background-color: $dark-gray
 
   &__header
     display: flex
 
-  &__artist
+  &__artist-info
     box-sizing: border-box
     width: 70%
     padding: 0 15px 30px 0
     display: inline-block
 
-  &__block
+  &__artists
     width: 30%
     display: inline-block
 
@@ -48,7 +48,7 @@
     align-items: center
     justify-content: space-between
 
-    .owerview-title
+    .overview-title
       margin: 0 auto 0 70px
 
   &__track-number
@@ -62,23 +62,23 @@
     margin-left: 46px
 
 @media screen and ( max-width: 1200px )
-  .owerview
+  .overview
 
     &__track-popularity
       display: none
 
 
 @media screen and ( max-width: 1025px )
-  .owerview
+  .overview
 
     &__header
       display: block
       margin-bottom: 20px
 
-    &__artist
+    &__artist-info
       width: 100%
 
-    &__block
+    &__artists
       width: 100%
 
     

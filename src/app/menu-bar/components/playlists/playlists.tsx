@@ -13,23 +13,23 @@ export const Playlists: React.FunctionComponent<PlaylistsProps> = ({
   itemNames,
 }) => {
   const menu = useRef<HTMLMenuElement>(null);
-  const [menuState, setMenuState] = useState({
+  const [opened, setOpened] = useState({
     menu: false,
     title: false,
   });
 
-  const navListClass = classNames('nav__list', {'nav__list_open': menuState.title});
+  const navListClass = classNames('nav__list', {'nav__list_open': opened.title});
 
   const changeMenuState = (value) => {
-    setMenuState({
-      menu: !menuState.menu,
-      title: !menuState.title,
+    setOpened({
+      menu: !opened.menu,
+      title: !opened.title,
     })
   }
 
   return (
     <div className="nav">
-      <MenuTitle name={name} menu={menu} onChange={changeMenuState} options={menuState}/>
+      <MenuTitle name={name} menu={menu} onChange={changeMenuState} options={opened}/>
       <menu className={navListClass} ref={menu}>
         {
           itemNames.map( (name, index) => {

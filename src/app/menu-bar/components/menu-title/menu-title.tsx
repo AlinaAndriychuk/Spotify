@@ -30,7 +30,7 @@ export const MenuTitle: React.FunctionComponent<MenuTitleProps> = ({
   return (
     <p className={titleClass} onClick={() => onChange(options)} ref={title}>
       {name}
-      <IosArrowDown className="nav-title__icon"></IosArrowDown>
+      <IosArrowDown className="nav-title__icon"/>
     </p>
   )
 };

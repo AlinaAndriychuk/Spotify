@@ -42,7 +42,7 @@ export const Song: React.FunctionComponent<SongProps> = ({
         <p className="song__number">
           {number}
         </p>
-        <AddedIcon position="left" added={added}></AddedIcon>
+        <AddedIcon position="left" added={added}/>
         <p className="song__name song__name_popular">
           {name}
         </p>

@@ -30,9 +30,9 @@ export const ArtistBar: React.FunctionComponent<ArtistBarProps> = ({
           {name}
         </h1>
         <div className="artist-bar__info-actions">
-          <TextButton fill="green" border="green-border" text="▶ play"></TextButton>
-          <TextButton fill="transparent" border="white-border" text="follow"></TextButton>
-          <MoreButton size="big"></MoreButton>
+          <TextButton fill="green" border="green-border" text="▶ play"/>
+          <TextButton fill="transparent" border="white-border" text="follow"/>
+          <MoreButton size="big"/>
         </div>
       </div>
       <div className="artist-bar__listeners">

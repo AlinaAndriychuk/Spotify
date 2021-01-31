@@ -16,12 +16,12 @@ export const MenuBar = () => {
    return (
     <div className="menu-bar">
       <div className="menu-bar__navigation">
-        <MainMenu name="main"></MainMenu>
-        <YourMusic name="your music"></YourMusic>
-        <Playlists itemNames={playlists} name="playlists"></Playlists>
+        <MainMenu name="main"/>
+        <YourMusic name="your music"/>
+        <Playlists itemNames={playlists} name="playlists"/>
       </div>
       <AddPlaylistButton/>
-      <CurrentTrackCover song={currentSong} artist={currentArtistName} image={currentArtistImage} added={currentTrackAdded}></CurrentTrackCover>
+      <CurrentTrackCover song={currentSong} artist={currentArtistName} image={currentArtistImage} added={currentTrackAdded}/>
     </div>
   )
 };

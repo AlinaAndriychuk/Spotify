@@ -19,6 +19,6 @@ export const MoreButton: React.FunctionComponent<MoreButtonProps> = ({
   });
 
   return (
-    <IosMore className={moreButtonClass}></IosMore>
+    <IosMore className={moreButtonClass}/>
   )
 };

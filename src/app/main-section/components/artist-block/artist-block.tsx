@@ -18,7 +18,7 @@ export const ArtistBlock: React.FunctionComponent<ArtistBlockProps> = ({
   return (
     <div className="artist-block">
       <div className="artist-block__image" style={style}>
-        <MdPlay className="artist-block__play"></MdPlay>
+        <MdPlay className="artist-block__play"/>
       </div>
       <a className="artist-block__name" href="./index.html">
         {name}

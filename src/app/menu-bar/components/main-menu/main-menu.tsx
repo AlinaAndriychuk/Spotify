@@ -32,23 +32,23 @@ export const MainMenu: React.FunctionComponent<MainMenuProps> = ({
 
   return (
     <nav className="nav">
-      <MenuTitle name={name} menu={menu} onChange={changeMenuState} options={menuState}></MenuTitle>
+      <MenuTitle name={name} menu={menu} onChange={changeMenuState} options={menuState}/>
       <menu className={navListClass} ref={menu}>
         <li className="nav__item">
           <a className="nav__link" href="./index.html">
-            <IosBrowsers className="nav__item-icon"></IosBrowsers>
+            <IosBrowsers className="nav__item-icon"/>
             Browse
           </a>
         </li>
         <li className="nav__item">
           <a className="nav__link" href="./index.html">
-            <IosContacts className="nav__item-icon"></IosContacts>
+            <IosContacts className="nav__item-icon"/>
             Activity
           </a>
         </li>
         <li className="nav__item">
           <a className="nav__link" href="./index.html">
-            <IosRadioOutline className="nav__item-icon"></IosRadioOutline>
+            <IosRadioOutline className="nav__item-icon"/>
             Radio
           </a>
         </li>

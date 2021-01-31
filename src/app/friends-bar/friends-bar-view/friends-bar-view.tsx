@@ -11,11 +11,11 @@ export const FriendsBar = () => {
       <ul className="friends-bar__list">
         {
           friendNames.map( (name, index) => {
-            return <Friend name={name} key={index}></Friend>
+            return <Friend name={name} key={index}/>
           }) 
         }
       </ul>
-      <TextButton fill="transparent" text="find friends" border="white-border"></TextButton>
+      <TextButton fill="transparent" text="find friends" border="white-border"/>
     </div>
   )
 };

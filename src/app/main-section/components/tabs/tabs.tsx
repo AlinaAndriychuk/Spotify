@@ -46,7 +46,7 @@ export const Tabs: React.FunctionComponent<TabProps> = ({
         {
           options.map( item => {
             return (
-              <TabItem options={item} onChange={onChange} active={value.value === item.value} renderTab={renderTab} key={item.value}></TabItem>  
+              <TabItem options={item} onChange={onChange} active={value.value === item.value} renderTab={renderTab} key={item.value}/>  
             )
           })
         }

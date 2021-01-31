@@ -33,29 +33,29 @@ export const YourMusic: React.FunctionComponent<YourMusicProps> = ({
 
   return (
     <div className="nav">
-      <MenuTitle name={name} menu={menu} onChange={changeMenuState} options={menuState}></MenuTitle>
+      <MenuTitle name={name} menu={menu} onChange={changeMenuState} options={menuState}/>
       <menu className={navListClass} ref={menu}>
         <li className="nav__item">
           <a className="nav__link" href="./index.html">
-            <MdHeadset className="nav__item-icon"></MdHeadset>
+            <MdHeadset className="nav__item-icon"/>
             Songs
           </a>
         </li>
         <li className="nav__item">
           <a className="nav__link" href="./index.html">
-            <IosMusicalNotes className="nav__item-icon"></IosMusicalNotes>
+            <IosMusicalNotes className="nav__item-icon"/>
             Albums
           </a>
         </li>
         <li className="nav__item">
           <a className="nav__link" href="./index.html">
-            <IosPerson className="nav__item-icon"></IosPerson>
+            <IosPerson className="nav__item-icon"/>
             Artists
           </a>
         </li>
         <li className="nav__item">
           <a className="nav__link" href="./index.html">
-            <IosDocumentOutline className="nav__item-icon"></IosDocumentOutline>
+            <IosDocumentOutline className="nav__item-icon"/>
             Local Files
           </a>
         </li>

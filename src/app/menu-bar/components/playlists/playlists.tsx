@@ -32,14 +32,14 @@ export const Playlists: React.FunctionComponent<PlaylistsProps> = ({
 
   return (
     <div className="nav">
-      <MenuTitle name={name} menu={menu} onChange={changeMenuState} options={menuState}></MenuTitle>
+      <MenuTitle name={name} menu={menu} onChange={changeMenuState} options={menuState}/>
       <menu className={navListClass} ref={menu}>
         {
           itemNames.map( (name, index) => {
             return (
               <li className="nav__item" key={index}>
                 <a className="nav__link" href="./index.html">
-                  <IosMusicalNotes className="nav__item-icon"></IosMusicalNotes>
+                  <IosMusicalNotes className="nav__item-icon"/>
                   {name}
                 </a>
               </li>

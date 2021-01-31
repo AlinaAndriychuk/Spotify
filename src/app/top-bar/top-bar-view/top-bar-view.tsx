@@ -13,12 +13,12 @@ export const TopBar = () => {
     <div className="top-bar">
       <div className="top-bar__nav">
         <div className="top-bar__nav-buttons">
-          <IosArrowBack className="top-bar__nav-arrow top-bar__nav-arrow_active"></IosArrowBack>
-          <IosArrowForward className="top-bar__nav-arrow"></IosArrowForward>
+          <IosArrowBack className="top-bar__nav-arrow top-bar__nav-arrow_active"/>
+          <IosArrowForward className="top-bar__nav-arrow"/>
         </div>
-        <Search placeholder="Search"></Search>
+        <Search placeholder="Search"/>
       </div>
-      <User userName={userName} src={userImage}></User>
+      <User userName={userName} src={userImage}/>
     </div>
   )
 }

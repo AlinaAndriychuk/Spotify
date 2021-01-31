@@ -31,9 +31,8 @@ export const TabsView = () => {
 
   return (
     <div className="tabs-view">
-      <Tabs options={options} value={value} renderTab={renderTab} onChange={handleOnChange}>
-      </Tabs>
-      {value.label === Labels.Owerview ? (<Owerview/>) : (<ArtistsPage names={artistsPageNames} images={artistsPageImages}></ArtistsPage>)}
+      <Tabs options={options} value={value} renderTab={renderTab} onChange={handleOnChange}/>
+      {value.label === Labels.Owerview ? (<Owerview/>) : (<ArtistsPage names={artistsPageNames} images={artistsPageImages}/>)}
     </div>
   )
 };

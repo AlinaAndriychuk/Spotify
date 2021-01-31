@@ -18,7 +18,7 @@ export const ArtistsPage: React.FunctionComponent<ArtistsPageProps> = ({
         names.map((name, index) => {
           return (
             <div className="artists-page__item" key={index}>
-              <ArtistBlock name={name} image={images[index]}></ArtistBlock>
+              <ArtistBlock name={name} image={images[index]}/>
             </div>
           )
         })

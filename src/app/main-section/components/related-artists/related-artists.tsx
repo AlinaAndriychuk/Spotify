@@ -17,7 +17,7 @@ export const RelatedArtists: React.FunctionComponent<RelatedArtistsProps> = ({
         images.map((src, index) => {
           return (
             <li className="related__item" key={index}>
-              <RelatedItem name={names[index]} image={src}></RelatedItem>
+              <RelatedItem name={names[index]} image={src}/>
             </li>
           )
         })

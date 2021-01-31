@@ -24,7 +24,7 @@ export const AddedIcon: React.FunctionComponent<AddedIconProps> = ({
   return (
     <>
       {
-        (added) ? <MdCheckmark className={addedIconClass}/> : <MdAdd className={addedIconClass}></MdAdd>
+        (added) ? <MdCheckmark className={addedIconClass}/> : <MdAdd className={addedIconClass}/>
       }
     </>
   )

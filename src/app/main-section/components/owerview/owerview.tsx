@@ -35,36 +35,36 @@ export const Owerview = () => {
     <div className="owerview">
       <div className="owerview__header">
         <div className="owerview__artist">
-          <OwerviewTitle name="latest release"></OwerviewTitle>
-          <LatestReleaze title={latestReleazeTitle} date={latestReleazeDate} imageSrc={latestReleazeImage}></LatestReleaze>
-          <OwerviewTitle name="popular"></OwerviewTitle>
-          <Popular images={popularImages} plays={plays} names={popularSongs} added={popularAdded}></Popular>
-          <TextButton fill="transparent" border="white-border" text="show 5 more"></TextButton>
+          <OwerviewTitle name="latest release"/>
+          <LatestReleaze title={latestReleazeTitle} date={latestReleazeDate} imageSrc={latestReleazeImage}/>
+          <OwerviewTitle name="popular"/>
+          <Popular images={popularImages} plays={plays} names={popularSongs} added={popularAdded}/>
+          <TextButton fill="transparent" border="white-border" text="show 5 more"/>
         </div>
         <div className="owerview__block">
-          <OwerviewTitle name="related artists"></OwerviewTitle>
-          <RelatedArtists images={artistImages} names={artists}></RelatedArtists>
+          <OwerviewTitle name="related artists"/>
+          <RelatedArtists images={artistImages} names={artists}/>
         </div>
       </div>
       <div className="owerview__albums">
-        <OwerviewTitle name="albums"></OwerviewTitle>
+        <OwerviewTitle name="albums"/>
         <div className="ovewview__buttons">
-          <IosList className="owerview__view owerview__view_active"></IosList>
-          <IosGrid className="owerview__view owerview__view_small"></IosGrid>
+          <IosList className="owerview__view owerview__view_active"/>
+          <IosGrid className="owerview__view owerview__view_small"/>
         </div>
       </div>
-      <Album year={albumYear} name={albumName} image={albumImage}></Album>
+      <Album year={albumYear} name={albumName} image={albumImage}/>
       <div className="owerview__track">
         <p className="owerview__track-number">
           #
         </p>
-        <OwerviewTitle name="song"></OwerviewTitle>
+        <OwerviewTitle name="song"/>
         <div className="ovewview__buttons">
-          <IosStopwatchOutline className="owerview__track-time"></IosStopwatchOutline>
-          <IosThumbsUp className="owerview__track-popularity"></IosThumbsUp>
+          <IosStopwatchOutline className="owerview__track-time"/>
+          <IosThumbsUp className="owerview__track-popularity"/>
         </div>
       </div>
-      <Track added={trackAdded} popularity={popularity} names={trackSongs} features={features} time={time}></Track>
+      <Track added={trackAdded} popularity={popularity} names={trackSongs} features={features} time={time}/>
     </div>
   )
 };

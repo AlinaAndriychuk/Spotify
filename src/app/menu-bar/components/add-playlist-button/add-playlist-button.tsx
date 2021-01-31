@@ -6,7 +6,7 @@ export const AddPlaylistButton = () => {
    return (
     <div className="add-button">
       <a className="add-button__link" href="./index.html">
-        <IosAddCircleOutline className="add-button__icon"></IosAddCircleOutline>
+        <IosAddCircleOutline className="add-button__icon"/>
         New Playlist
       </a>
     </div>

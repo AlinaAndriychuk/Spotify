@@ -24,7 +24,7 @@ export const Track: React.FunctionComponent<TrackProps> = ({
         names.map((name, index) => {
           return (
             <li className="track__item" key={index}>
-              <Song number={index + 1} full={true} name={name} feature={features[index]} time={time[index]} added={added[index]} popularity={popularity[index]}></Song>
+              <Song number={index + 1} full={true} name={name} feature={features[index]} time={time[index]} added={added[index]} popularity={popularity[index]}/>
             </li>
           )
         })

@@ -1,7 +1,6 @@
 import React from 'react';
 import './overview.sass';
 import { LatestReleaze } from '../latest-release/latest-release';
-import { OverviewTitle } from '../overview-title/overview-title';
 import { Popular } from '../popular/popular';
 import { TextButton } from '../../../../ui/text-button/text-button';
 import { RelatedArtists } from '../related-artists/related-artists';
@@ -35,20 +34,28 @@ export const Overview = () => {
     <div className="overview">
       <div className="overview__header">
         <div className="overview__artist-info">
-          <OverviewTitle name="latest release"/>
+          <p className="overview-title">
+            latest release
+          </p>
           <LatestReleaze title={latestReleazeTitle} date={latestReleazeDate} imageSrc={latestReleazeImage}/>
-          <OverviewTitle name="popular"/>
+          <p className="overview-title">
+            popular
+          </p>
           <Popular images={popularImages} plays={plays} names={popularSongs} added={popularAdded}/>
           <TextButton fill="transparent" border="white-border" text="show 5 more"/>
         </div>
         <div className="overview__artists">
-          <OverviewTitle name="related artists"/>
+          <p className="overview-title">
+            related artists
+          </p>
           <RelatedArtists images={artistImages} names={artists}/>
         </div>
       </div>
       <div className="overview__albums">
-        <OverviewTitle name="albums"/>
-        <div className="ovewview__buttons">
+        <p className="overview-title">
+          albums
+        </p>
+        <div className="overview__buttons">
           <IosList className="overview__view overview__view_active"/>
           <IosGrid className="overview__view overview__view_small"/>
         </div>
@@ -58,7 +65,9 @@ export const Overview = () => {
         <p className="overview__track-number">
           #
         </p>
-        <OverviewTitle name="song"/>
+        <p className="overview-title">
+          song
+        </p>
         <div className="ovewview__buttons">
           <IosStopwatchOutline className="overview__track-time"/>
           <IosThumbsUp className="overview__track-popularity"/>

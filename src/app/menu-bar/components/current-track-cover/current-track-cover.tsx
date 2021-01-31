@@ -27,7 +27,7 @@ export const CurrentTrackCover: React.FunctionComponent<CurrentTrackCoverProps> 
           {artist}
         </a>
       </div>
-      <AddedIcon position="right" added={added}/>
+      <AddedIcon added={added}/>
     </div>
   )
 };

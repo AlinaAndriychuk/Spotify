@@ -12,10 +12,9 @@ interface MoreButtonProps {
 export const MoreButton: React.FunctionComponent<MoreButtonProps> = ({
   size,
 }) => {
-  const moreButtonClass = classNames({
-    "more-button": true,
-    "more-button_small": size === "small",
-    "more-button_big": size === "big",
+  const moreButtonClass = classNames('more-button', {
+    'more-button_small': size === 'small',
+    'more-button_big': size === 'big',
   });
 
   return (

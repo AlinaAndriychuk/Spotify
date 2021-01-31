@@ -11,10 +11,7 @@ export const UserMenu: React.FunctionComponent<UserMenuProps> = ({
   menu,
   open,
 }) => {
-  const userMenuClass = classNames({
-    "user-menu": true,
-    "user-menu_open": open,
-  });
+  const userMenuClass = classNames('user-menu', {'user-menu_open': open});
 
   return (
     <menu className={userMenuClass} ref={menu}>

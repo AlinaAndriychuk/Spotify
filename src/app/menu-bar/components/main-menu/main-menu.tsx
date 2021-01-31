@@ -18,10 +18,7 @@ export const MainMenu: React.FunctionComponent<MainMenuProps> = ({
     title: false,
   });
 
-  const navListClass = classNames({
-    "nav__list": true,
-    "nav__list_open": menuState.title,
-  });
+  const navListClass = classNames( 'nav__list', {'nav__list_open': menuState.title});
 
   const changeMenuState = (value) => {
     setMenuState({

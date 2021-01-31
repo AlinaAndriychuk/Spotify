@@ -16,7 +16,7 @@ const TabItem: React.FunctionComponent<TabItemProps> = ({
   renderTab,
   onChange,
 }) => {
-  const itemClass = classNames({"tab-item": true, "tab-item_active": active});
+  const itemClass = classNames('tab-item', {'tab-item_active': active});
 
   return (
     <li className={itemClass} onClick={ () => onChange(options) }>

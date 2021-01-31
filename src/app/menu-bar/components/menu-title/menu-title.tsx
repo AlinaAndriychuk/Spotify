@@ -22,10 +22,7 @@ export const MenuTitle: React.FunctionComponent<MenuTitleProps> = ({
   onChange,
 }) => {
   const title = useRef<HTMLParagraphElement>(null);
-  const titleClass = classNames({
-    "nav-title": true,
-    "nav-title_open": options.title,
-  });
+  const titleClass = classNames('nav-title', {'nav-title_open': options.title});
 
   return (
     <p className={titleClass} onClick={() => onChange(options)} ref={title}>

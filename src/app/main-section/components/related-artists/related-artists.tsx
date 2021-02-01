@@ -1,23 +1,22 @@
 import React from 'react';
 import './related-artists.sass'
 import { RelatedItem } from '../related-item/related-item'
+import { RelatedOptions } from '../overview/overview';
 
 interface RelatedArtistsProps {
-  images: string[];
-  names: string[];
+  props: RelatedOptions[];
 }
 
 export const RelatedArtists: React.FunctionComponent<RelatedArtistsProps> = ({
-  images,
-  names,
+  props
 }) => {
   return (
     <ul className="related">
       {
-        images.map((src, index) => {
+        props.map( option => {
           return (
-            <li className="related__item" key={index}>
-              <RelatedItem name={names[index]} image={src}/>
+            <li className="related__item" key={option.value}>
+              <RelatedItem name={option.name} image={option.image}/>
             </li>
           )
         })

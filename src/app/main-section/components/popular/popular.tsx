@@ -1,27 +1,22 @@
 import React from 'react';
 import './popular.sass';
 import { Song } from '../song/song'
+import { popularOptions } from '../overview/overview';
 
 interface PopularProps {
-  images: string[];
-  names: string[];
-  plays: string[];
-  added: boolean[];
+  props: popularOptions[];
 }
 
 export const Popular: React.FunctionComponent<PopularProps> = ({
-  images,
-  names,
-  plays,
-  added,
+  props
 }) => {
   return (
     <ul className="popular">
       {
-        images.map((src, index) => {
+        props.map( option => {
           return (
-            <li className="popular__item" key={index}>
-              <Song full={false} image={src} added={added[index]} number={index + 1} name={names[index]} plays={plays[index]}/>
+            <li className="popular__item" key={option.value}>
+              <Song image={option.image} added={option.added} number={option.value} name={option.name} plays={option.plays}/>
             </li>
           )
         })

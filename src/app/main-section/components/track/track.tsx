@@ -1,30 +1,23 @@
 import React from 'react';
 import './track.sass';
 import { Song } from '../song/song'
+import { TrackOptions } from '../overview/overview';
 
 interface TrackProps {
-  added: boolean[];
-  names: string[];
-  features: string[];
-  time: string[];
-  popularity: boolean[];
+  props: TrackOptions[];
 }
 
 export const Track: React.FunctionComponent<TrackProps> = ({
-  added,
-  names,
-  features,
-  time,
-  popularity,
+  props
 }) => {
 
   return (
     <ul className="track">
       {
-        names.map((name, index) => {
+        props.map( option => {
           return (
-            <li className="track__item" key={index}>
-              <Song number={index + 1} full={true} name={name} feature={features[index]} time={time[index]} added={added[index]} popularity={popularity[index]}/>
+            <li className="track__item" key={option.value}>
+              <Song  number={option.value} name={option.name} feature={option.features} time={option.time} added={option.added} popularity={option.popularity}/>
             </li>
           )
         })

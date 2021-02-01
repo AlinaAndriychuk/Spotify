@@ -2,15 +2,16 @@ import React, { useRef, useState } from 'react';
 import IosMusicalNotes from 'react-ionicons/lib/IosMusicalNotes';
 import { MenuTitle } from '../menu-title/menu-title';
 import classNames from 'classnames';
+import { PlaylistsOptions } from '../../menu-bar-view/menu-bar-view';
 
 interface PlaylistsProps {
   name: string;
-  itemNames: string[];
+  props: PlaylistsOptions[];
 };
 
 export const Playlists: React.FunctionComponent<PlaylistsProps> = ({
   name,
-  itemNames,
+  props,
 }) => {
   const menu = useRef<HTMLMenuElement>(null);
   const [opened, setOpened] = useState({
@@ -32,12 +33,12 @@ export const Playlists: React.FunctionComponent<PlaylistsProps> = ({
       <MenuTitle name={name} menu={menu} onChange={changeMenuState} options={opened}/>
       <menu className={navListClass} ref={menu}>
         {
-          itemNames.map( (name, index) => {
+          props.map( option => {
             return (
-              <li className="nav__item" key={index}>
+              <li className="nav__item" key={option.value}>
                 <a className="nav__link" href="./index.html">
                   <IosMusicalNotes className="nav__item-icon"/>
-                  {name}
+                  {option.name}
                 </a>
               </li>
             )

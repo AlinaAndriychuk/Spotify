@@ -1,6 +1,6 @@
 import React from 'react';
 import './current-track-cover.sass';
-import {AddedIcon} from '../../../../ui/added-icon/added-icon'
+import { AddedIcon } from '../../../../ui/added-icon/added-icon'
 
 interface CurrentTrackCoverProps {
   added: boolean;
@@ -18,7 +18,7 @@ export const CurrentTrackCover: React.FunctionComponent<CurrentTrackCoverProps> 
 
   return (
     <div className="track-cover">
-      <img className="track-cover__image" src={image}  alt={artist}/>
+      <img className="track-cover__image" src={image} alt={artist} />
       <div className="track-cover__text">
         <a className="track-cover__name" href="./index.html">
           {song}
@@ -27,7 +27,7 @@ export const CurrentTrackCover: React.FunctionComponent<CurrentTrackCoverProps> 
           {artist}
         </a>
       </div>
-      <AddedIcon added={added}/>
+      <AddedIcon added={added} />
     </div>
   )
 };

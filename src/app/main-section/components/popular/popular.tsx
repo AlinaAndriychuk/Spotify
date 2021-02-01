@@ -13,10 +13,10 @@ export const Popular: React.FunctionComponent<PopularProps> = ({
   return (
     <ul className="popular">
       {
-        props.map( option => {
+        props.map(option => {
           return (
             <li className="popular__item" key={option.value}>
-              <Song image={option.image} added={option.added} number={option.value} name={option.name} plays={option.plays}/>
+              <Song image={option.image} added={option.added} number={option.value} name={option.name} plays={option.plays} />
             </li>
           )
         })

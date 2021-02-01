@@ -18,7 +18,7 @@ export const ArtistCard: React.FunctionComponent<ArtistCardProps> = ({
   return (
     <div className="artist-card">
       <div className="artist-card__image" style={style}>
-        <MdPlay className="artist-card__play"/>
+        <MdPlay className="artist-card__play" />
       </div>
       <a className="artist-card__name" href="./index.html">
         {name}

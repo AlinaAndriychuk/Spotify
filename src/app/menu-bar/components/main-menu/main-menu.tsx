@@ -8,19 +8,19 @@ export const MainMenu = () => {
     <menu className="nav-list">
       <li className="nav-list__item">
         <a className="nav-list__link" href="./index.html">
-          <IosBrowsers className="nav-list__item-icon"/>
+          <IosBrowsers className="nav-list__item-icon" />
           Browse
         </a>
       </li>
       <li className="nav-list__item">
         <a className="nav-list__link" href="./index.html">
-          <IosContacts className="nav-list__item-icon"/>
+          <IosContacts className="nav-list__item-icon" />
           Activity
         </a>
       </li>
       <li className="nav-list__item">
         <a className="nav-list__link" href="./index.html">
-          <IosRadioOutline className="nav-list__item-icon"/>
+          <IosRadioOutline className="nav-list__item-icon" />
           Radio
         </a>
       </li>

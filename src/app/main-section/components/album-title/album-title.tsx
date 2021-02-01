@@ -7,10 +7,10 @@ import { OverviewTitle } from '../overview-title/overview-title';
 export const AlbumTitle = () => {
   return (
     <div className="album-title">
-      <OverviewTitle name="albums"/>
+      <OverviewTitle name="albums" />
       <div className="album-title__buttons">
-        <IosList className="album-title__view album-title__view_active"/>
-        <IosGrid className="album-title__view album-title__view_small"/>
+        <IosList className="album-title__view album-title__view_active" />
+        <IosGrid className="album-title__view album-title__view_small" />
       </div>
     </div>
   )

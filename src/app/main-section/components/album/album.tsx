@@ -23,8 +23,8 @@ export const Album: React.FunctionComponent<AlbumProps> = ({
       <p className="album__name">
         {name}
       </p>
-      <TextButton text="save" fill="transparent" border="green-border"/>
-      <MoreButton size="small"/>
+      <TextButton text="save" fill="transparent" border="green-border" />
+      <MoreButton size="small" />
     </div>
   )
 };

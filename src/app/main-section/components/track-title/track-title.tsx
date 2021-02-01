@@ -10,9 +10,9 @@ export const TrackTitle = () => {
       <p className="track-title__number">
         #
       </p>
-      <OverviewTitle name="song"/>
-      <IosStopwatchOutline className="track-title__time"/>
-      <IosThumbsUp className="track-title__popularity"/>
+      <OverviewTitle name="song" />
+      <IosStopwatchOutline className="track-title__time" />
+      <IosThumbsUp className="track-title__popularity" />
     </div>
   )
 };

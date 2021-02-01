@@ -12,11 +12,11 @@ export const Playlists: React.FunctionComponent<PlaylistsProps> = ({
   return (
     <menu className="nav-list">
       {
-        props.map( option => {
+        props.map(option => {
           return (
             <li className="nav-list__item" key={option.value}>
               <a className="nav-list__link" href="./index.html">
-                <IosMusicalNotes className="nav-list__item-icon"/>
+                <IosMusicalNotes className="nav-list__item-icon" />
                 {option.name}
               </a>
             </li>

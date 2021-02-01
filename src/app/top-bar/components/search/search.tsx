@@ -8,7 +8,7 @@ interface SearchProps {
 export const Search: React.FunctionComponent<SearchProps> = ({
   placeholder
 }) => {
-   return (
-    <input className="search" placeholder={placeholder}/>
+  return (
+    <input className="search" placeholder={placeholder} />
   )
 };

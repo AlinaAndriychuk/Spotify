@@ -8,7 +8,7 @@ interface OverviewTitleProps {
 export const OverviewTitle: React.FunctionComponent<OverviewTitleProps> = ({
   name
 }) => {
-   return (
+  return (
     <p className="overview-title">
       {name}
     </p>

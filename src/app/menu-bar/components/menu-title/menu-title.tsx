@@ -1,8 +1,7 @@
-import React, { RefObject, useRef } from 'react';
+import React from 'react';
 import IosArrowDown from 'react-ionicons/lib/IosArrowDown';
 import IosArrowUp from 'react-ionicons/lib/IosArrowUp';
 import './menu-title.sass';
-import classNames from 'classnames';
 
 interface MenuTitleProps {
   name: string;
@@ -18,7 +17,7 @@ export const MenuTitle: React.FunctionComponent<MenuTitleProps> = ({
   return (
     <p className="nav-title" onClick={onChange}>
       {name}
-      { (opened) ? <IosArrowDown className="nav-title__icon"/> : <IosArrowUp className="nav-title__icon"/>}
+      { (opened) ? <IosArrowDown className="nav-title__icon" /> : <IosArrowUp className="nav-title__icon" />}
     </p>
   )
 };

@@ -1,5 +1,5 @@
 import React, { ReactNode, useState } from 'react';
-import {MenuTitle} from '../menu-title/menu-title';
+import { MenuTitle } from '../menu-title/menu-title';
 
 interface MenuProps {
   name: string;
@@ -18,7 +18,7 @@ export const Menu: React.FunctionComponent<MenuProps> = ({
 
   return (
     <nav className="nav">
-      <MenuTitle name={name} opened={opened} onChange={changeMenuState}/>
+      <MenuTitle name={name} opened={opened} onChange={changeMenuState} />
       {opened && children}
     </nav>
   )

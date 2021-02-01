@@ -16,13 +16,16 @@
     height: 100%
 
   &__button
-    margin: 5px auto
+    position: absolute
+    top: 12px
+    left: 320px
     width: 35px
     height: 35px
 
     display: none
     fill: $light-gray
     cursor: pointer
+    z-index: 10
 
     &:hover
       fill: $white
@@ -68,7 +71,7 @@
   .menu-bar
     width: 100%
     height: auto
-    position: relative
+    position: static
     top: auto
 
     &__button
@@ -97,3 +100,11 @@
 
     &__item-icon
       display: none
+
+@media screen and ( max-width: 650px )
+  .menu-bar
+
+    &__button
+      top: 5px
+      right: 20px
+      left: auto

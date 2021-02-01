@@ -14,7 +14,7 @@ export const Friend: React.FunctionComponent<FriendProps> = ({
   return (
     <li className="friend">
       <a className="friend__link" href={link || "./index.html"}>
-        <MdPerson className="friend__icon"/>
+        <MdPerson className="friend__icon" />
         {name}
       </a>
     </li>

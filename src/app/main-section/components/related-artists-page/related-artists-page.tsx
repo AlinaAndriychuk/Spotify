@@ -1,7 +1,7 @@
 import React from 'react';
 import './related-artists-page.sass';
 import { ArtistCard } from '../artist-card/artist-card';
-import {ArtistOptions} from '../tabs-view/tabs-view'
+import { ArtistOptions } from '../tabs-view/tabs-view'
 
 
 interface ArtistsPageProps {
@@ -14,10 +14,10 @@ export const ArtistsPage: React.FunctionComponent<ArtistsPageProps> = ({
   return (
     <div className="artists-page">
       {
-        props.map( option => {
+        props.map(option => {
           return (
             <div className="artists-page__item" key={option.value}>
-              <ArtistCard name={option.name} image={option.image}/>
+              <ArtistCard name={option.name} image={option.image} />
             </div>
           )
         })

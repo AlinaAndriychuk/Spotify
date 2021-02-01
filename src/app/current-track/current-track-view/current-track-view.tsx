@@ -7,6 +7,6 @@ const valume = 90
 
 export const CurrentTrack = () => {
   return (
-    <TrackControls progressValue={progressValue} time={trackTime} valume={valume}/>
+    <TrackControls progressValue={progressValue} time={trackTime} valume={valume} />
   )
 };

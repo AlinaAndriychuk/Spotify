@@ -16,10 +16,10 @@ const TabItem: React.FunctionComponent<TabItemProps> = ({
   renderTab,
   onChange,
 }) => {
-  const itemClass = classNames('tab-item', {'tab-item_active': active});
+  const itemClass = classNames('tab-item', { 'tab-item_active': active });
 
   return (
-    <li className={itemClass} onClick={ () => onChange(options) }>
+    <li className={itemClass} onClick={() => onChange(options)}>
       <p className="tab-item__text">
         {renderTab(options.label)}
       </p>
@@ -44,9 +44,9 @@ export const Tabs: React.FunctionComponent<TabProps> = ({
     <div className="tabs">
       <ul className="tabs__list">
         {
-          options.map( item => {
+          options.map(item => {
             return (
-              <TabItem options={item} onChange={onChange} active={value.value === item.value} renderTab={renderTab} key={item.value}/>  
+              <TabItem options={item} onChange={onChange} active={value.value === item.value} renderTab={renderTab} key={item.value} />
             )
           })
         }

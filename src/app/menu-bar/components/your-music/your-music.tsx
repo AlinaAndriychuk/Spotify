@@ -9,25 +9,25 @@ export const YourMusic = () => {
     <menu className="nav-list">
       <li className="nav-list__item">
         <a className="nav-list__link" href="./index.html">
-          <MdHeadset className="nav-list__item-icon"/>
+          <MdHeadset className="nav-list__item-icon" />
           Songs
         </a>
       </li>
       <li className="nav-list__item">
         <a className="nav-list__link" href="./index.html">
-          <IosMusicalNotes className="nav-list__item-icon"/>
+          <IosMusicalNotes className="nav-list__item-icon" />
           Albums
         </a>
       </li>
       <li className="nav-list__item">
         <a className="nav-list__link" href="./index.html">
-          <IosPerson className="nav-list__item-icon"/>
+          <IosPerson className="nav-list__item-icon" />
           Artists
         </a>
       </li>
       <li className="nav-list__item">
         <a className="nav-list__link" href="./index.html">
-          <IosDocumentOutline className="nav-list__item-icon"/>
+          <IosDocumentOutline className="nav-list__item-icon" />
           Local Files
         </a>
       </li>

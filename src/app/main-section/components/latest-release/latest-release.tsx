@@ -1,6 +1,5 @@
 import React from 'react';
 import './latest-release.sass';
-import { OverviewTitle } from '../overview-title/overview-title';
 
 interface LatestReleaseProps {
   imageSrc: string;
@@ -13,9 +12,9 @@ export const LatestReleaze: React.FunctionComponent<LatestReleaseProps> = ({
   title,
   date,
 }) => {
-   return (
+  return (
     <div className="release">
-      <img className="release__image" src={imageSrc} alt="release"/>
+      <img className="release__image" src={imageSrc} alt="release" />
       <p className="release__title">
         {title}
       </p>

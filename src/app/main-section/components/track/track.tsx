@@ -14,10 +14,10 @@ export const Track: React.FunctionComponent<TrackProps> = ({
   return (
     <ul className="track">
       {
-        props.map( option => {
+        props.map(option => {
           return (
             <li className="track__item" key={option.value}>
-              <Song  number={option.value} name={option.name} feature={option.features} time={option.time} added={option.added} popularity={option.popularity}/>
+              <Song number={option.value} name={option.name} feature={option.features} time={option.time} added={option.added} popularity={option.popularity} />
             </li>
           )
         })

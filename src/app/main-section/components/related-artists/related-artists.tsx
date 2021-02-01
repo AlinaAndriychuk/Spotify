@@ -13,10 +13,10 @@ export const RelatedArtists: React.FunctionComponent<RelatedArtistsProps> = ({
   return (
     <ul className="related">
       {
-        props.map( option => {
+        props.map(option => {
           return (
             <li className="related__item" key={option.value}>
-              <RelatedItem name={option.name} image={option.image}/>
+              <RelatedItem name={option.name} image={option.image} />
             </li>
           )
         })

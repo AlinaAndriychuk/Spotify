@@ -22,14 +22,14 @@ export const User: React.FunctionComponent<UserProps> = ({
 
   return (
     <div className="user">
-      <MdNotifications className="user__button"/>
-      <MdArchive className="user__button"/>
+      <MdNotifications className="user__button" />
+      <MdArchive className="user__button" />
       <div className="user__info">
         <img className="user__info-image" src={src} alt="Profile" />
         <span className="user__info-name">{userName}</span>
       </div>
-      <IosArrowDown className="user__menu-button" onClick={changeMenuState}/>
-      {opened && <UserMenu/>}
+      <IosArrowDown className="user__menu-button" onClick={changeMenuState} />
+      {opened && <UserMenu />}
     </div>
   )
 };

@@ -15,6 +15,18 @@
     padding: 15px
     height: 100%
 
+  &__button
+    margin: 5px auto
+    width: 35px
+    height: 35px
+
+    display: none
+    fill: $light-gray
+    cursor: pointer
+
+    &:hover
+      fill: $white
+
 .nav
   margin-bottom: 15px
 
@@ -58,6 +70,12 @@
     height: auto
     position: relative
     top: auto
+
+    &__button
+      display: inline-block
+
+    &__button_open + &__navigation
+      display: none
 
     &__navigation
       display: flex

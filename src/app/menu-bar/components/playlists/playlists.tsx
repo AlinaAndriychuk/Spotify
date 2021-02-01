@@ -1,6 +1,6 @@
 import React from 'react';
 import IosMusicalNotes from 'react-ionicons/lib/IosMusicalNotes';
-import { PlaylistsOptions } from '../menu/menu';
+import { PlaylistsOptions } from '../../menu-bar-view/menu-bar-view';
 
 interface PlaylistsProps {
   props: PlaylistsOptions[];

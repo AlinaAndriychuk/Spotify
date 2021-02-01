@@ -1,7 +1,7 @@
 import React from 'react';
 import './related-artists.sass'
 import { RelatedItem } from '../related-item/related-item'
-import { RelatedOptions } from '../overview/overview';
+import { RelatedOptions } from '../overview-top/overview-top';
 
 interface RelatedArtistsProps {
   props: RelatedOptions[];

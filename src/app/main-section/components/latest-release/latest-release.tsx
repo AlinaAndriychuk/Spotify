@@ -1,5 +1,6 @@
 import React from 'react';
 import './latest-release.sass';
+import { OverviewTitle } from '../overview-title/overview-title';
 
 interface LatestReleaseProps {
   imageSrc: string;

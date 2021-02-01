@@ -1,7 +1,7 @@
 import React from 'react';
 import './popular.sass';
 import { Song } from '../song/song'
-import { popularOptions } from '../overview/overview';
+import { popularOptions } from '../overview-top/overview-top';
 
 interface PopularProps {
   props: popularOptions[];

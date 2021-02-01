@@ -1,0 +1,26 @@
+@import '../../../../styles/variables'
+  
+.track-title
+  display: flex
+  height: 42px
+  align-items: center
+  justify-content: space-between
+
+  .overview-title
+    margin: 0 auto 0 70px
+
+  &__number
+    margin-left: 10px
+
+  &__time
+    fill: $light-gray
+
+  &__popularity
+    fill: $light-gray
+    margin-left: 46px
+
+@media screen and ( max-width: 1200px )
+  .track-title
+
+    &__popularity
+      display: none

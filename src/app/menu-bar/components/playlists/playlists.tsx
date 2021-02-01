@@ -10,13 +10,13 @@ export const Playlists: React.FunctionComponent<PlaylistsProps> = ({
   props,
 }) => {
   return (
-    <menu className="nav__list">
+    <menu className="nav-list">
       {
         props.map( option => {
           return (
-            <li className="nav__item" key={option.value}>
-              <a className="nav__link" href="./index.html">
-                <IosMusicalNotes className="nav__item-icon"/>
+            <li className="nav-list__item" key={option.value}>
+              <a className="nav-list__link" href="./index.html">
+                <IosMusicalNotes className="nav-list__item-icon"/>
                 {option.name}
               </a>
             </li>

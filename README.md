@@ -1,3 +1,3 @@
 # Spotify
 Home page
-[Link](https://alinaandriychuk.github.io/Spotify/public/build/)
+[Link](https://spotify-react-markup.netlify.app/)
